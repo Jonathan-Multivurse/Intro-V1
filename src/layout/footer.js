@@ -1,6 +1,7 @@
 import Grid from "@mui/material/Grid";
 import * as React from "react";
 import { styled } from "@mui/material/styles";
+import { LinkedIn, Twitter } from "@mui/icons-material";
 import Link from "@mui/material/Link";
 
 const FOOTER = styled(Grid)(() => ({
@@ -76,25 +77,34 @@ function Footer() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={12} md={5} className="align-self-center">
-          <address>
+        <Grid item xs={12} md={5} className="align-self-end">
+          <address style={{ marginBottom: 40 }}>
             <br />
             <p
               style={{
                 fontWeight: 300,
                 fontSize: 14,
                 letterSpacing: 0.6,
-                paddingTop: 45,
+                paddingTop: 30,
               }}
             >
               https://multivurse.com
             </p>
-            <p style={{ fontWeight: 300, fontSize: 13, letterSpacing: 0.5 }}>
-              Address: 5396 Quebec St, Vancouver, BC V5W 2N5
-            </p>
             <p style={{ fontWeight: 300, fontSize: 13, letterSpacing: 0.8 }}>
               multivurse.technologies@gmail.com
             </p>
+            <Grid container spacing={3} justifyContent="center">
+              <Grid item>
+                <Link href="https://www.linkedin.com/company/multivurse/">
+                  <LinkedIn style={{ fontSize: "35px", color: "#f6d5f7" }} />
+                </Link>
+              </Grid>
+              <Grid item>
+                <Link href="https://twitter.com/multivurse_art">
+                  <Twitter style={{ fontSize: "32px", color: "#f6d5f7" }} />
+                </Link>
+              </Grid>
+            </Grid>
           </address>
         </Grid>
         <Grid item xs={12} md={3} className="align-self-end">

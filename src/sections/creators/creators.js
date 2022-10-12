@@ -189,7 +189,16 @@ export default function Creators() {
             <Grid item xs={12}>
               <Title>{LEADERSHIP[selectedLeader].heading}</Title>
 
-              <hr width="80%"></hr>
+              <hr
+                style={{
+                  height: 1.5,
+                  width: "80%",
+                  border: "none",
+                  background:
+                    "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+                  opacity: 0.8,
+                }}
+              ></hr>
             </Grid>
           </Grid>
           <Grid container md={9} sm={9} xs={10}>

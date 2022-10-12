@@ -23,23 +23,23 @@ export const LEADERSHIP = [
   {
     heading: "Deploy on XR Devices, Web and Mobile ",
     contentweb:
-      "Conviniently deploy on multiple scalable platforms already built for you where your XR experiences can reach a growing community of users. When you're ready for deployment, upload your content via the creators studio.",
+      "Upload your content via the creators studio and conviniently deploy on multiple platforms already built for you where your XR experiences can reach a growing community.",
     contentmobile:
-      "Conviniently deploy on multiple scalable platforms already built for you where your XR experiences can reach a growing community of users. When you're ready for deployment, upload your content via the creators studio.",
+      "Upload your content via the creators studio and conviniently deploy on multiple platforms already built for you where your XR experiences can reach a growing community.",
   },
   {
     heading: "Network with Fans and Creators",
     contentweb:
-      "Grow fans and find creators you want to connect with using their name or email address, ask fellow creators to join your network so you can send messages and once they accept, you can share ideas and advice with each other.",
+      "Grow fans and find creators you want to connect with through our social networking platform , reach out to fellow creators to join your network , kick off collaborations, and share ideas and advice with each other.",
     contentmobile:
-      "Grow fans and find creators you want to connect with using their name or email address, ask fellow creators to join your network so you can send messages and once they accept, you can share ideas and advice with each other.",
+      "Grow fans and find creators you want to connect with through our social networking platform, reach out to fellow creators to join your network , kick off collaborations, and share ideas and advice with each other.",
   },
   {
     heading: "Access World Class Support",
     contentweb:
-      "There's never been a better time to bring your story to life. Your ability to create genuine connections and meaningful interactions is reimagined with the Metaverse. To this end, we provide 24/7 support to help bring your vision to life.",
+      "There's never been a better time to bring your story to life. Your ability to create genuine connections and meaningful interactions is reimagined with Multivurse. To this end, we provide 24/7 support to help bring your vision to life.",
     contentmobile:
-      "There's never been a better time to bring your story to life. Your ability to create genuine connections and meaningful interactions is reimagined with the Metaverse. To this end, we provide 24/7 support to help bring your vision to life.",
+      "There's never been a better time to bring your story to life. Your ability to create genuine connections and meaningful interactions is reimagined with Multivurse. To this end, we provide 24/7 support to help bring your vision to life.",
   },
 ];
 

@@ -67,6 +67,7 @@ export default function Community() {
               style={{
                 height: 1.5,
                 width: "100%",
+                border: "none",
                 background: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
                 opacity: 0.8,
               }}
@@ -88,6 +89,7 @@ export default function Community() {
               style={{
                 height: 1.5,
                 width: "100%",
+                border: "none",
                 background: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
                 opacity: 0.8,
               }}

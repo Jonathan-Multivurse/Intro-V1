@@ -269,7 +269,7 @@ function Hero() {
         <ArtWrap>
           <Art>
             <img
-              src="/assets/dude.png"
+              src="/assets/dude-hero.png"
               width="100%"
               height="100%"
               alt="One"
