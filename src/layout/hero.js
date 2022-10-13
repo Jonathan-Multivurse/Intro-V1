@@ -257,7 +257,7 @@ function Hero() {
                 disableRipple
                 variant="outlined"
                 onClick={() =>
-                  openInNewTab("https://www.linkedin.com/company/multivurse/")
+                  openInNewTab("https://twitter.com/multivurse_art")
                 }
               >
                 Learn More

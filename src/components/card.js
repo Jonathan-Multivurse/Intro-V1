@@ -111,7 +111,7 @@ export default function InvestorsCard({ cardContent, link }) {
                 width: 200,
                 justifyContent: "left",
               }}
-              onClick={() => openInNewTab(link)}
+              onClick={() => openInNewTab("https://explorers.multivurse.com/")}
             >
               <RemoveRedEye fontSize="medium" style={{ color: "#fbe9d7" }} />
               <Typography
