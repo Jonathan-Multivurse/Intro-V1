@@ -243,7 +243,7 @@ function Hero() {
                 Get Started
               </MainButton>
             </Container>
-            <Container class="animate__animated animate__slideInLeft">
+            {/* <Container class="animate__animated animate__slideInLeft">
               <MainButton
                 disableRipple
                 variant="outlined"
@@ -251,7 +251,7 @@ function Hero() {
               >
                 Creators
               </MainButton>
-            </Container>
+            </Container> */}
             <Container class="animate__animated animate__slideInLeft">
               <MainButton
                 disableRipple
