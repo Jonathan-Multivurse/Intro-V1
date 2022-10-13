@@ -202,7 +202,7 @@ export default function Creators() {
             </Grid>
           </Grid>
           <Grid container md={9} sm={9} xs={10}>
-            <LinkedInTop>
+            {/* <LinkedInTop>
               <Button
                 variant="outlined"
                 disableRipple
@@ -232,7 +232,7 @@ export default function Creators() {
                   Go
                 </Typography>
               </Button>
-            </LinkedInTop>
+            </LinkedInTop> */}
             <Grid
               item
               style={{
@@ -251,7 +251,7 @@ export default function Creators() {
               </ContentMobile>
             </Grid>
           </Grid>
-          <LinkedInBottom>
+          {/* <LinkedInBottom>
             <Button
               variant="outlined"
               disableRipple
@@ -281,7 +281,7 @@ export default function Creators() {
                 Go
               </Typography>
             </Button>
-          </LinkedInBottom>
+          </LinkedInBottom> */}
         </Grid>
       </Grid>
     </Grid>

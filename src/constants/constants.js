@@ -14,7 +14,7 @@ export const CREATORS_PARAGRAPH =
 
 export const LEADERSHIP = [
   {
-    heading: "Create with Your favorite Engines",
+    heading: "Create with Your favorite Tools",
     contentweb:
       "We currently support immersive art made with Unity and Unreal engines, two of the most dominant tools for XR development. Both Unity and Unreal have great learning resources. Documentation, tutorials, online courses, etc. ",
     contentmobile:
