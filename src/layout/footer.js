@@ -18,7 +18,7 @@ const VerticalLine = styled(Grid)(({ height, theme }) => ({
   height: height,
   borderWidth: "1.5px",
   borderLeftStyle: "solid",
-  color: "#fbe9d7",
+  color: "#fff",
   [theme.breakpoints.down("sm")]: {
     borderWidth: "1.5px",
   },
@@ -56,7 +56,7 @@ function Footer() {
                       </h6>
                       <hr
                         style={{
-                          color: "#fbe9d7",
+                          color: "#fff",
                           opacity: 1,
                           height: 1.5,
                           textAlign: "center",
@@ -96,12 +96,12 @@ function Footer() {
             <Grid container spacing={3} justifyContent="center">
               <Grid item>
                 <Link href="https://www.linkedin.com/company/multivurse/">
-                  <LinkedIn style={{ fontSize: "35px", color: "#f6d5f7" }} />
+                  <LinkedIn style={{ fontSize: "35px", color: "#fff" }} />
                 </Link>
               </Grid>
               <Grid item>
                 <Link href="https://twitter.com/multivurse_art">
-                  <Twitter style={{ fontSize: "32px", color: "#f6d5f7" }} />
+                  <Twitter style={{ fontSize: "32px", color: "#fff" }} />
                 </Link>
               </Grid>
             </Grid>

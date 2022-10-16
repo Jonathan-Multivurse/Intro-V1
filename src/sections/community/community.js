@@ -9,7 +9,7 @@ import { Decoration } from "../../components/decoration";
 
 const Paragraph = styled("div")(({ theme }) => ({
   textAlign: "justify",
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -30,7 +30,7 @@ const Mission = styled(Grid)(({ theme }) => ({
 }));
 
 const Title = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -44,6 +44,7 @@ const Title = styled("div")(({ theme }) => ({
 const ImageContainer = styled("img")(({ theme }) => ({
   height: "600px",
   width: "100%",
+  background: "linear-gradient(90deg, #213644 0%, #2c5364 100%)",
   borderRadius: "16px",
   objectFit: "cover",
   marginTop: "16px",
@@ -61,7 +62,7 @@ export default function Community() {
       <Grid container>
         <Mission item md={5}>
           <Grid container>
-            <Title>Explorers</Title>
+            <Title>Accredited Investors</Title>
             <Paragraph>{EXPLORERS_PARAGRAPH}</Paragraph>
             <hr
               style={{
@@ -78,12 +79,12 @@ export default function Community() {
             className="justify-content-center"
             style={{ marginTop: 20 }}
           >
-            <ImageContainer src="/assets/explorerspic.png" alt="image" />
+            <ImageContainer src="/assets/community1.png" alt="image" />
           </Grid>
         </Mission>
         <Mission item md={5}>
           <Grid container>
-            <Title>Creators</Title>
+            <Title>Fund Managers</Title>
             <Paragraph>{CREATORS_PARAGRAPH}</Paragraph>
             <hr
               style={{
@@ -96,12 +97,12 @@ export default function Community() {
             ></hr>
           </Grid>
           <Grid container justifyContent="center" style={{ marginTop: 20 }}>
-            <ImageContainer src="/assets/creatorspic.png" alt="image" />
+            <ImageContainer src="/assets/community2.png" alt="image" />
           </Grid>
         </Mission>
         <Decoration item md={2} className="align-self-end">
           <Grid container className="justify-content-end">
-            <img src="/assets/abs4.png" width="120%" alt="" height="120%" />
+            <img src="/assets/abs2.png" width="120%" alt="" height="120%" />
           </Grid>
         </Decoration>
       </Grid>

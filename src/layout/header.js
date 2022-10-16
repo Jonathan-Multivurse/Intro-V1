@@ -23,7 +23,7 @@ const navLinkStyles = {
   color: "#333",
 };
 const NavTitle = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -41,8 +41,8 @@ const namecontainer = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  background: "linear-gradient(90deg, #5271FF 0%, #696eff 100%)",
-  color: "#fbe9d7",
+  background: "linear-gradient(90deg, #213644 0%, #2c5364 100%)",
+  color: "#fff",
   fontFamily: "helvetica",
   boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
   fontSize: 18,
@@ -59,12 +59,12 @@ function Header() {
           <Grid container fluid>
             <div style={namecontainer} variant="rounded">
               <img
-                src="/assets/newlogo.png"
-                width="25%"
-                height="100%"
+                src="/assets/noble.png"
+                width="20%"
+                height="80%"
                 alt="logo"
               />
-              &nbsp; Multivurse
+              &nbsp; Noblealts
             </div>
           </Grid>
         </Navbar.Brand>
@@ -76,7 +76,7 @@ function Header() {
           }}
           aria-controls="basic-navbar-nav"
         >
-          <Menu style={{ fontSize: "32px", color: "#f6d5f7" }} />
+          <Menu style={{ fontSize: "32px", color: "#fff" }} />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Grid container style={{ marginTop: 25 }} />
@@ -88,10 +88,10 @@ function Header() {
               <NavTitle>Community</NavTitle>
             </NavLink>
             <NavLink style={navLinkStyles} href="#leadership">
-              <NavTitle>Creators</NavTitle>
+              <NavTitle>Managers</NavTitle>
             </NavLink>
             <NavLink style={navLinkStyles} href="#investors">
-              <NavTitle>Pricing</NavTitle>
+              <NavTitle>Plans</NavTitle>
             </NavLink>
           </Nav>
         </Navbar.Collapse>

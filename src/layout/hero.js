@@ -120,7 +120,7 @@ const MainButton = styled("button")(({ theme }) => ({
   fontWeight: "normal",
   background: "transparent",
   border: "1px solid rgba(255, 255, 255, .5)",
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -151,7 +151,7 @@ const MainButton = styled("button")(({ theme }) => ({
 
 const MainHeading = styled("div")(({ theme }) => ({
   fontFamily: "Roboto",
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -182,7 +182,7 @@ const MainHeading = styled("div")(({ theme }) => ({
 }));
 
 const Paragraph = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -223,12 +223,14 @@ function Hero() {
         <Description>
           <Grid class="animate__animated animate__slideInLeft">
             <MainHeading>
-              Experience, Collect, and Trade
+              Modern Investment Services for
               <br />
-              Immersive Digital Art
+              Alternative Assets
             </MainHeading>
             <Paragraph>
-              A Marketplace and Network For Immersive Digital Art
+              A market place and network for accredited investors
+              <br />
+              Management Tools and Algorithms for fund mangers
             </Paragraph>
           </Grid>
           <Buttons>
@@ -269,7 +271,7 @@ function Hero() {
         <ArtWrap>
           <Art>
             <img
-              src="/assets/hero-img.png"
+              src="/assets/growth.png"
               width="100%"
               height="100%"
               alt="One"

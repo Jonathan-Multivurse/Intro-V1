@@ -33,7 +33,7 @@ const LinkedInBottom = styled("div")(({ theme }) => ({
 }));
 
 const Title = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -45,7 +45,7 @@ const Title = styled("div")(({ theme }) => ({
 }));
 
 const ContentWeb = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -55,7 +55,7 @@ const ContentWeb = styled("div")(({ theme }) => ({
 }));
 
 const ContentMobile = styled("p")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",

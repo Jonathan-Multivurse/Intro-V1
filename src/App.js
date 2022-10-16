@@ -43,7 +43,7 @@ function App() {
           <div
             className="App"
             style={{
-              background: "linear-gradient(180deg, #696eff 0%, #4766f4 100%)",
+              background: "linear-gradient(to bottom, #0f2027, #203a43, #2c5364)",
             }}
           >
             <Header />

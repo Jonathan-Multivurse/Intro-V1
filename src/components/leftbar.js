@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 
 const LEFT_TITLE_BAR = styled(Grid)(() => ({
-  background: "linear-gradient(90deg, #5271FF 0%, #696eff 100%)",
+  background: "linear-gradient(90deg, #213644 0%, #2c5364 100%)",
   boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
   borderTopRightRadius: "199px",
   marginTop: "100px",
@@ -16,7 +16,7 @@ const LEFT_TITLE_BAR = styled(Grid)(() => ({
 }));
 
 const Title = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -29,7 +29,7 @@ const Title = styled("div")(({ theme }) => ({
 }));
 
 const SubTitle = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -56,7 +56,7 @@ export default function LeftTitleBar({ title, content }) {
                 height: 1.5,
                 width: "70%",
                 border: "none",
-                background: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+                background: "linear-gradient(90deg, #fff 0%, #fff 100%)",
                 opacity: 0.8,
               }}
             ></hr>
@@ -67,7 +67,7 @@ export default function LeftTitleBar({ title, content }) {
             height: 1.5,
             width: "85%",
             border: "none",
-            background: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+            background: "linear-gradient(90deg, #fff 0%, #fff 100%)",
             opacity: 0.8,
           }}
         ></hr>

@@ -28,7 +28,7 @@ const CircledImage = styled("div")(({ theme }) => ({
 }));
 const Paragraph = styled("p")(({ theme }) => ({
   textAlign: "justify",
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -62,7 +62,7 @@ const Heading = styled("div")(({ theme }) => ({
   textTransform: "capitalize",
   fontSize: 30,
   marginBottom: "10px",
-  backgroundImage: "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -75,10 +75,10 @@ const Heading = styled("div")(({ theme }) => ({
 
 const Line = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
-    borderTop: "1px solid #fbe9d7",
+    borderTop: "1px solid #fff",
   },
   [theme.breakpoints.up("md")]: {
-    borderRight: "1px solid #fbe9d7",
+    borderRight: "1px solid #fff",
   },
 }));
 
@@ -132,7 +132,8 @@ export default function Features() {
               >
                 <style>
                   {`.selected {
-                                            background: linear-gradient(90deg, #3f5efb 0%, #dbc2ff  100%);
+                                            background: linear-gradient(90deg, #213644 0%, #2c5364  100%);
+                                 
                                             border-image-slice: 1;
                                             border-radius: 100%;
 
