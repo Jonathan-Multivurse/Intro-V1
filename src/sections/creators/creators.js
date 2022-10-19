@@ -85,7 +85,7 @@ export default function Creators() {
               <style>
                 {`
                                         .selected-service {
-                                          background: linear-gradient(90deg, #5271FF 0%, #3f5efb 100%);
+                                          background: linear-gradient(90deg, #0f2027 0%, #203a43  100%);
                                           border-radius: 16px;
                                     }
                                 `}
@@ -103,9 +103,9 @@ export default function Creators() {
                       className={selectedLeader === 0 ? "selected-service" : ""}
                     >
                       <ServiceImage
-                        source="/assets/build.png"
+                        source="/assets/lineart1.png"
                         borderoutline={
-                          selectedLeader === 0 ? "1px solid #dbc2ff" : ""
+                          selectedLeader === 0 ? "1px solid #fff" : ""
                         }
                       />
                     </Grid>
@@ -126,9 +126,9 @@ export default function Creators() {
                       className={selectedLeader === 1 ? "selected-service" : ""}
                     >
                       <ServiceImage
-                        source="/assets/deploy.png"
+                        source="/assets/lineart2.png"
                         borderoutline={
-                          selectedLeader === 1 ? "1px solid #dbc2ff" : ""
+                          selectedLeader === 1 ? "1px solid #fff" : ""
                         }
                       />
                     </Grid>
@@ -149,9 +149,9 @@ export default function Creators() {
                       className={selectedLeader === 2 ? "selected-service" : ""}
                     >
                       <ServiceImage
-                        source="/assets/network.png"
+                        source="/assets/lineart1.png"
                         borderoutline={
-                          selectedLeader === 2 ? "1px solid #dbc2ff" : ""
+                          selectedLeader === 2 ? "1px solid #fff" : ""
                         }
                       />
                     </Grid>
@@ -172,9 +172,9 @@ export default function Creators() {
                       className={selectedLeader === 3 ? "selected-service" : ""}
                     >
                       <ServiceImage
-                        source="/assets/support.png"
+                        source="/assets/lineart2.png"
                         borderoutline={
-                          selectedLeader === 3 ? "1px solid #dbc2ff" : ""
+                          selectedLeader === 3 ? "1px solid #fff" : ""
                         }
                       />
                     </Grid>

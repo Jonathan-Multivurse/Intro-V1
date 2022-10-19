@@ -52,7 +52,7 @@ function Footer() {
                           marginRight: 50,
                         }}
                       >
-                        MULTIVURSE
+                        NOBLEALTS
                       </h6>
                       <hr
                         style={{
@@ -70,7 +70,7 @@ function Footer() {
               <Grid container spacing={3} justifyContent="center">
                 <Grid item>
                   <Link href="">
-                    <img src="/assets/newlogo.png" height="60" alt="logo"></img>
+                    <img src="/assets/noble.png" height="60" alt="logo"></img>
                   </Link>
                 </Grid>
               </Grid>
@@ -88,7 +88,7 @@ function Footer() {
                 paddingTop: 30,
               }}
             >
-              https://multivurse.com
+              https://noblealts.com
             </p>
             <p style={{ fontWeight: 300, fontSize: 13, letterSpacing: 0.8 }}>
               multivurse.technologies@gmail.com

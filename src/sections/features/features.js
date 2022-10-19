@@ -86,17 +86,17 @@ const CONTENT = [
   {
     heading: "Marketplace",
     paragraph: PLAY_PARAGRAPH,
-    image: "/assets/marketpic.png",
+    image: "/assets/lineart1.png",
   },
   {
     heading: "Network",
     paragraph: SHOP_PARAGRAPH,
-    image: "/assets/networkpic.png",
+    image: "/assets/lineart2.png",
   },
   {
     heading: "Immersive Galleries",
     paragraph: LEARN_PARAGRAPH,
-    image: "/assets/gallerypic.png",
+    image: "/assets/lineart1.png",
   },
 ];
 
@@ -132,8 +132,7 @@ export default function Features() {
               >
                 <style>
                   {`.selected {
-                                            background: linear-gradient(90deg, #213644 0%, #2c5364  100%);
-                                 
+                                            background: linear-gradient(90deg, #0f2027 0%, #203a43  100%);
                                             border-image-slice: 1;
                                             border-radius: 100%;
 

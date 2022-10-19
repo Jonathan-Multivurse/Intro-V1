@@ -41,7 +41,7 @@ const namecontainer = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  background: "linear-gradient(90deg, #213644 0%, #2c5364 100%)",
+  background: "linear-gradient(to right, #203a43, #203a43)",
   color: "#fff",
   fontFamily: "helvetica",
   boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",

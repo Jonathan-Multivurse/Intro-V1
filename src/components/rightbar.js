@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 
 const RIGHT_TITLE_BAR = styled(Grid)(() => ({
-  background: "linear-gradient(90deg, #2c5364  0%, #213644 100%)",
+  background: "linear-gradient(to left, #0f2027, #203a43)",
   boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
   borderTopLeftRadius: "199px",
   marginTop: "100px",

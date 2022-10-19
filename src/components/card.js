@@ -56,7 +56,7 @@ export default function InvestorsCard({ cardContent, link }) {
           textAlign: "start",
           color: "#223366",
           boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-          background: "linear-gradient(to top, #2c5364, #2c5364 100%)",
+          background: "linear-gradient(to top, #0f2027, #203a43)",
         }}
       >
         <CardContent style={{ width: "100%", paddingRight: 40 }}>

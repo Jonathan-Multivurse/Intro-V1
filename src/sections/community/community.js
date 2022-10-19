@@ -79,7 +79,7 @@ export default function Community() {
             className="justify-content-center"
             style={{ marginTop: 20 }}
           >
-            <ImageContainer src="/assets/community1.png" alt="image" />
+            <ImageContainer src="/assets/lineart1.png" alt="image" />
           </Grid>
         </Mission>
         <Mission item md={5}>
@@ -97,7 +97,7 @@ export default function Community() {
             ></hr>
           </Grid>
           <Grid container justifyContent="center" style={{ marginTop: 20 }}>
-            <ImageContainer src="/assets/community2.png" alt="image" />
+            <ImageContainer src="/assets/lineart2.png" alt="image" />
           </Grid>
         </Mission>
         <Decoration item md={2} className="align-self-end">
