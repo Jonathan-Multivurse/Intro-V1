@@ -36,14 +36,14 @@ function App() {
             alignItems: "center",
           }}
         >
-          <BounceLoader size={100} css={{ marginTop: 200 }} color="#0f2027" />
+          <BounceLoader size={100} css={{ marginTop: 200 }} color="#000" />
         </div>
       ) : (
         <ThemeProvider theme={theme}>
           <div
             className="App"
             style={{
-              background: "linear-gradient(to bottom, #0f2027, #0f2027, #0f2027)",
+              background: "linear-gradient(to bottom, #fff, #fff, #fff)",
             }}
           >
             <Header />

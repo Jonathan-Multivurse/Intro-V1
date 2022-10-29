@@ -5,12 +5,12 @@ import { LinkedIn, Twitter } from "@mui/icons-material";
 import Link from "@mui/material/Link";
 
 const FOOTER = styled(Grid)(() => ({
-  background: "transparent",
+  background: "#222",
   opacity: 1,
   justifyContent: "center",
   marginTop: "100px",
   borderTop: "1px solid #fbe9d7",
-  color: "#fbe9d7",
+  color: "#fff",
   paddingTop: "50px",
 }));
 const VerticalLine = styled(Grid)(({ height, theme }) => ({

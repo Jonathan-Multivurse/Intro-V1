@@ -18,13 +18,13 @@ const HeroWrapp = styled(Grid)(({ theme }) => ({
   width: "100%",
   display: "flex",
   flexDirection: "row",
-  justifyContent: "space-between",
+  justifyContent: "center",
   alignItems: "center",
   backgroundColor: "transparent",
   [theme.breakpoints.down("md")]: {
     height: 600,
     width: "100%",
-    marginTop: 250,
+    marginTop: 150,
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
@@ -33,7 +33,7 @@ const HeroWrapp = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     height: 600,
     width: "100%",
-    marginTop: 200,
+    marginTop: 100,
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
@@ -82,32 +82,39 @@ const Buttons = styled(Grid)(({ theme }) => ({
 
 const ArtWrap = styled(Grid)(({ theme }) => ({
   height: "100%",
-  width: "60%",
+  width: "40%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
   [theme.breakpoints.down("md")]: {
     width: "70%",
-    paddingTop: 50,
+    paddingTop: 0,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    marginBottom: 50,
   },
   [theme.breakpoints.down("sm")]: {
     width: "100%",
-    paddingTop: 25,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    marginBottom: 50,
   },
 }));
 
 const Art = styled(Grid)(({ theme }) => ({
   width: "85%",
   [theme.breakpoints.down("md")]: {
+    width: "50%",
     display: "flex",
     justifyContent: "center",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "50%",
+    display: "flex",
+    justifyContent: "start",
   },
 }));
 
@@ -119,13 +126,13 @@ const MainButton = styled("button")(({ theme }) => ({
   textTransform: "capitalize",
   fontWeight: "normal",
   background: "transparent",
-  border: "1px solid rgba(255, 255, 255, .5)",
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+  border: "1px solid #222",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
   "&:hover": {
-    border: "1px solid rgba(255, 255, 255, 1)",
+    border: "1px solid #bbb",
   },
   [theme.breakpoints.up("xl")]: {
     width: "300px",
@@ -151,7 +158,7 @@ const MainButton = styled("button")(({ theme }) => ({
 
 const MainHeading = styled("div")(({ theme }) => ({
   fontFamily: "Roboto",
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -182,7 +189,7 @@ const MainHeading = styled("div")(({ theme }) => ({
 }));
 
 const Paragraph = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -220,6 +227,17 @@ function Hero() {
   return (
     <div>
       <HeroWrapp order={{ lg: 1, md: 3 }}>
+        <ArtWrap>
+          <Art>
+            <img
+              src="/assets/noblehero.png"
+              width="100%"
+              height="100%"
+              alt="One"
+              class="animate__animated animate__slideInLeft"
+            />
+          </Art>
+        </ArtWrap>
         <Description>
           <Grid class="animate__animated animate__slideInLeft">
             <MainHeading>
@@ -267,18 +285,6 @@ function Hero() {
             </Container>
           </Buttons>
         </Description>
-
-        <ArtWrap>
-          <Art>
-            <img
-              src="/assets/growth.png"
-              width="100%"
-              height="100%"
-              alt="One"
-              class="animate__animated animate__slideInLeft"
-            />
-          </Art>
-        </ArtWrap>
       </HeroWrapp>
     </div>
   );

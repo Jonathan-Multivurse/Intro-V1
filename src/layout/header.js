@@ -20,10 +20,10 @@ const navLinkStyles = {
   fontWeight: 300,
   paddingLeft: 20,
   paddingRight: 20,
-  color: "#333",
+  color: "#222",
 };
 const NavTitle = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -41,7 +41,7 @@ const namecontainer = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  background: "linear-gradient(to right, #203a43, #203a43)",
+  background: "linear-gradient(to right, #222, #222)",
   color: "#fff",
   fontFamily: "helvetica",
   boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
@@ -76,7 +76,7 @@ function Header() {
           }}
           aria-controls="basic-navbar-nav"
         >
-          <Menu style={{ fontSize: "32px", color: "#fff" }} />
+          <Menu style={{ fontSize: "32px", color: "#222" }} />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Grid container style={{ marginTop: 25 }} />
@@ -85,7 +85,7 @@ function Header() {
               <NavTitle>Features</NavTitle>
             </NavLink>
             <NavLink style={navLinkStyles} href="#mission">
-              <NavTitle>Community</NavTitle>
+              <NavTitle>Investors</NavTitle>
             </NavLink>
             <NavLink style={navLinkStyles} href="#leadership">
               <NavTitle>Managers</NavTitle>
