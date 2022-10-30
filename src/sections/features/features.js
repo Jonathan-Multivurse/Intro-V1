@@ -111,11 +111,11 @@ export default function Features() {
         </Grid>
       </Grid>
       <Grid container style={{ marginTop: "70px", paddingRight: "50px" }}>
-        <Decoration item xs={2} className="align-self-end">
+        {/* <Decoration item xs={2} className="align-self-end">
           <Grid container>
             <img src="/assets/abs1.png" width="120%" height="120%" alt="" />
           </Grid>
-        </Decoration>
+        </Decoration> */}
         <Grid item xs={12} md={10}>
           <Grid container>
             <Grid

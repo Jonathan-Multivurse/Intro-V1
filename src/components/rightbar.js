@@ -2,8 +2,8 @@ import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 
 const RIGHT_TITLE_BAR = styled(Grid)(() => ({
-  background: "linear-gradient(to left, #0f2027, #203a43)",
-  boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
+  background: "linear-gradient(to left, #fff, #fff)",
+  // boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
   borderTopLeftRadius: "199px",
   marginTop: "100px",
   borderBottomLeftRadius: "199px",
@@ -16,30 +16,36 @@ const RIGHT_TITLE_BAR = styled(Grid)(() => ({
 }));
 
 const Title = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
   textAlign: "left",
-  color: "#FFFFFF",
+  color: "#222",
   fontFamily: "Roboto",
-  fontSize: 16,
+  fontSize: 22,
   fontWeight: 600,
   letterSpacing: 2,
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 20,
+  },
 }));
 
 const SubTitle = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
   textAlign: "left",
-  color: "#FFFFFF",
+  color: "#222",
   fontFamily: "helvetica",
-  fontSize: 14,
+  fontSize: 16,
   fontWeight: 400,
   letterSpacing: 1.8,
   marginTop: 20,
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 15,
+  },
 }));
 
 export default function RightTitleBar({ title, content }) {
@@ -56,7 +62,7 @@ export default function RightTitleBar({ title, content }) {
                 height: 1.5,
                 width: "70%",
                 border: "none",
-                background: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+                background: "linear-gradient(90deg, #222 0%, #222 100%)",
                 opacity: 0.8,
               }}
             ></hr>
@@ -67,7 +73,7 @@ export default function RightTitleBar({ title, content }) {
             height: 1.5,
             width: "85%",
             border: "none",
-            background: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+            background: "linear-gradient(90deg, #222 0%, #222 100%)",
             opacity: 0.8,
           }}
         ></hr>

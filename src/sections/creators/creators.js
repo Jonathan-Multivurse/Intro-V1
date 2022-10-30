@@ -76,11 +76,11 @@ export default function Creators() {
       <Grid container style={{ marginTop: "75px" }}>
         <Grid item xs={5}>
           <Grid container justifyContent="center">
-            <Decoration item xs={4} className="align-self-end">
+            {/* <Decoration item xs={4} className="align-self-end">
               <Grid container>
                 <img src="/assets/abs3.png" width="150%" alt="" height="150%" />
               </Grid>
-            </Decoration>
+            </Decoration> */}
             <Grid item xs={8} className="align-self-center">
               <style>
                 {`

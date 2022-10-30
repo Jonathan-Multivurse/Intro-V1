@@ -43,7 +43,7 @@ export default function InvestorsCard({ cardContent, link }) {
         height: 600,
       }}
     >
-      <ImageContainer src={cardContent.imgSource} />
+      {/* <ImageContainer src={cardContent.imgSource} /> */}
       <Card
         style={{
           alignContent: "center",
@@ -56,7 +56,7 @@ export default function InvestorsCard({ cardContent, link }) {
           textAlign: "start",
           color: "#223366",
           boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-          background: "linear-gradient(to top, #0f2027, #203a43)",
+          background: "linear-gradient(to top, #fff, #fff)",
         }}
       >
         <CardContent style={{ width: "100%", paddingRight: 40 }}>
@@ -64,7 +64,7 @@ export default function InvestorsCard({ cardContent, link }) {
             style={{
               marginBottom: 15,
               textAlign: "left",
-              color: "#fbe9d7",
+              color: "#222",
               fontFamily: "Roboto",
               fontSize: 20,
               fontWeight: 400,
@@ -76,7 +76,7 @@ export default function InvestorsCard({ cardContent, link }) {
           <Typography
             style={{
               textAlign: "justify",
-              color: "#fbe9d7",
+              color: "#222",
               fontFamily: "Roboto",
               fontWeight: 300,
               letterSpacing: 1,
@@ -88,7 +88,7 @@ export default function InvestorsCard({ cardContent, link }) {
           <Typography
             style={{
               textAlign: "justify",
-              color: "#fbe9d7",
+              color: "#222",
               fontFamily: "Roboto",
               fontWeight: 300,
               marginTop: 50,
@@ -106,18 +106,18 @@ export default function InvestorsCard({ cardContent, link }) {
               disableRipple
               style={{
                 borderRadius: "20px",
-                border: "1px solid #fbe9d7",
+                border: "1px solid #222",
                 height: 50,
                 width: 200,
                 justifyContent: "left",
               }}
               onClick={() => openInNewTab("https://explorers.multivurse.com/")}
             >
-              <RemoveRedEye fontSize="medium" style={{ color: "#fbe9d7" }} />
+              <RemoveRedEye fontSize="medium" style={{ color: "#222" }} />
               <Typography
                 style={{
                   textAlign: "justify",
-                  color: "#fbe9d7",
+                  color: "#222",
                   fontFamily: "Roboto",
                   textTransform: "capitalize",
                   fontWeight: 300,

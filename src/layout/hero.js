@@ -105,7 +105,7 @@ const ArtWrap = styled(Grid)(({ theme }) => ({
 }));
 
 const Art = styled(Grid)(({ theme }) => ({
-  width: "85%",
+  width: "75%",
   [theme.breakpoints.down("md")]: {
     width: "50%",
     display: "flex",

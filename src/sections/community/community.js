@@ -100,11 +100,11 @@ export default function Community() {
             <ImageContainer src="/assets/lineart2.png" alt="image" />
           </Grid>
         </Mission>
-        <Decoration item md={2} className="align-self-end">
+        {/* <Decoration item md={2} className="align-self-end">
           <Grid container className="justify-content-end">
             <img src="/assets/abs2.png" width="120%" alt="" height="120%" />
           </Grid>
-        </Decoration>
+        </Decoration> */}
       </Grid>
     </Grid>
   );
