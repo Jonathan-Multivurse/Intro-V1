@@ -28,7 +28,7 @@ const CircledImage = styled("div")(({ theme }) => ({
 }));
 const Paragraph = styled("p")(({ theme }) => ({
   textAlign: "justify",
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -62,7 +62,7 @@ const Heading = styled("div")(({ theme }) => ({
   textTransform: "capitalize",
   fontSize: 30,
   marginBottom: "10px",
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -132,8 +132,8 @@ export default function Features() {
               >
                 <style>
                   {`.selected {
-                                            background: linear-gradient(90deg, #0f2027 0%, #203a43  100%);
-                                            border-image-slice: 1;
+                                            background: linear-gradient(90deg, #fff 0%, #fff  100%);
+                                            border: 2px solid black;
                                             border-radius: 100%;
 
                                         }`}
