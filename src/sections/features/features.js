@@ -45,7 +45,7 @@ const Paragraph = styled("p")(({ theme }) => ({
 }));
 
 const ImageContainer = styled("img")(({ theme }) => ({
-  height: "400px",
+  height: "600px",
   width: "100%",
   borderRadius: "16px",
   objectFit: "cover",
@@ -75,10 +75,12 @@ const Heading = styled("div")(({ theme }) => ({
 
 const Line = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
-    borderTop: "1px solid #fff",
+    width: 60,
+    borderTop: "1px solid #222",
   },
   [theme.breakpoints.up("md")]: {
-    borderRight: "1px solid #fff",
+    width: 120,
+    borderTop: "1px solid #222",
   },
 }));
 
@@ -110,25 +112,38 @@ export default function Features() {
           <LeftTitleBar title={"FEATURES"} content={"WHAT WE OFFER"} />
         </Grid>
       </Grid>
-      <Grid container style={{ marginTop: "70px", paddingRight: "50px" }}>
+      <Grid
+        container
+        style={{ marginTop: "70px", paddingLeft: 25, paddingRight: 25 }}
+      >
         {/* <Decoration item xs={2} className="align-self-end">
           <Grid container>
             <img src="/assets/abs1.png" width="120%" height="120%" alt="" />
           </Grid>
         </Decoration> */}
-        <Grid item xs={12} md={10}>
-          <Grid container>
+        <Grid item xs={12} md={12}>
+          <Grid
+            container
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              background: "",
+            }}
+          >
             <Grid
-              item
+              container
               xs={12}
-              md={4}
+              md={6}
               className="align-self-center"
-              style={{ paddingLeft: "50px" }}
+              style={{}}
             >
               <Grid
                 container
-                direction={largeScreen ? "column" : "row"}
+                flexDirection={"row"}
                 justifyContent="center"
+                alignItems="center"
               >
                 <style>
                   {`.selected {
@@ -165,8 +180,8 @@ export default function Features() {
                   xs={0}
                   style={{
                     alignSelf: "center",
-                    marginBottom: "50px",
-                    marginTop: "50px",
+                    marginLeft: "50px",
+                    marginRight: "50px",
                   }}
                 >
                   <Grid container>
@@ -200,8 +215,8 @@ export default function Features() {
                   xs={0}
                   style={{
                     alignSelf: "center",
-                    marginBottom: "60px",
-                    marginTop: "60px",
+                    marginLeft: "60px",
+                    marginRight: "60px",
                   }}
                 >
                   <Grid container>
@@ -209,7 +224,7 @@ export default function Features() {
                   </Grid>
                 </Line>
 
-                <Grid item sm={2} xs={4}>
+                <Grid item sm={2} xs={4} style={{ marginBottom: "30px" }}>
                   <Button
                     onClick={() => setSelected(2)}
                     style={{ background: "transparent" }}
@@ -232,7 +247,7 @@ export default function Features() {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={12} md={8} style={{ paddingLeft: "50px" }}>
+            <Grid item xs={12} md={8}>
               <Grid>
                 <Grid>
                   <Paragraph>{CONTENT[selected].paragraph}</Paragraph>

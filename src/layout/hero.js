@@ -241,14 +241,13 @@ function Hero() {
         <Description>
           <Grid class="animate__animated animate__slideInLeft">
             <MainHeading>
-              Modern Investment Services for
+              Modern Wealth Management
               <br />
-              Alternative Assets
+              All-in-One Workstation
             </MainHeading>
             <Paragraph>
-              A market place and network for accredited investors
+              maximize and protect your overall financial health
               <br />
-              Management Tools and Algorithms for fund mangers
             </Paragraph>
           </Grid>
           <Buttons>

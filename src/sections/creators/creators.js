@@ -33,7 +33,7 @@ const LinkedInBottom = styled("div")(({ theme }) => ({
 }));
 
 const Title = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -45,7 +45,7 @@ const Title = styled("div")(({ theme }) => ({
 }));
 
 const ContentWeb = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -55,7 +55,7 @@ const ContentWeb = styled("div")(({ theme }) => ({
 }));
 
 const ContentMobile = styled("p")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -70,22 +70,17 @@ export default function Creators() {
     <Grid container id="leadership">
       <Grid container>
         <Grid item md={5} xs={10}>
-          <LeftTitleBar title={"CREATORS"} content={"HOW WE SUPPORT YOU"} />
+          <LeftTitleBar title={"MANAGERS"} content={"THE PROFESSIONALS"} />
         </Grid>
       </Grid>
       <Grid container style={{ marginTop: "75px" }}>
         <Grid item xs={5}>
           <Grid container justifyContent="center">
-            {/* <Decoration item xs={4} className="align-self-end">
-              <Grid container>
-                <img src="/assets/abs3.png" width="150%" alt="" height="150%" />
-              </Grid>
-            </Decoration> */}
             <Grid item xs={8} className="align-self-center">
               <style>
                 {`
                                         .selected-service {
-                                          background: linear-gradient(90deg, #0f2027 0%, #203a43  100%);
+                                          background: linear-gradient(90deg, #222 0%, #222  100%);
                                           border-radius: 16px;
                                     }
                                 `}
@@ -105,7 +100,7 @@ export default function Creators() {
                       <ServiceImage
                         source="/assets/lineart1.png"
                         borderoutline={
-                          selectedLeader === 0 ? "1px solid #fff" : ""
+                          selectedLeader === 0 ? "2px solid #FFFF00" : ""
                         }
                       />
                     </Grid>
@@ -128,7 +123,7 @@ export default function Creators() {
                       <ServiceImage
                         source="/assets/lineart2.png"
                         borderoutline={
-                          selectedLeader === 1 ? "1px solid #fff" : ""
+                          selectedLeader === 1 ? "2px solid #FFFF00" : ""
                         }
                       />
                     </Grid>
@@ -151,7 +146,7 @@ export default function Creators() {
                       <ServiceImage
                         source="/assets/lineart1.png"
                         borderoutline={
-                          selectedLeader === 2 ? "1px solid #fff" : ""
+                          selectedLeader === 2 ? "2px solid #FFFF00" : ""
                         }
                       />
                     </Grid>
@@ -174,7 +169,7 @@ export default function Creators() {
                       <ServiceImage
                         source="/assets/lineart2.png"
                         borderoutline={
-                          selectedLeader === 3 ? "1px solid #fff" : ""
+                          selectedLeader === 3 ? "2px solid #FFFF00" : ""
                         }
                       />
                     </Grid>
