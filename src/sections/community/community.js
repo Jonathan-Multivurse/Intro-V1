@@ -4,44 +4,24 @@ import Button from "@mui/material/Button";
 import { useState } from "react";
 import { styled } from "@mui/material/styles";
 import { useMediaQuery } from "@mui/material";
-import {
-  PLAY_PARAGRAPH,
-  SHOP_PARAGRAPH,
-  LEARN_PARAGRAPH,
-} from "../../constants/constants";
+import { PLAY_PARAGRAPH, SHOP_PARAGRAPH } from "../../constants/constants";
 
-const Paragraph = styled("div")(({ theme }) => ({
+const Paragraph = styled("p")(({ theme }) => ({
   textAlign: "justify",
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
+  marginBottom: 40,
   fontFamily: "Roboto",
-  fontSize: 16,
   fontWeight: 300,
+  fontSize: 18,
   letterSpacing: 1,
   lineHeight: 2,
-}));
-
-const Mission = styled(Grid)(({ theme }) => ({
-  paddingLeft: "50px",
-  paddingRight: "50px",
-  marginTop: "100px",
   [theme.breakpoints.down("md")]: {
-    marginTop: "50px",
+    marginTop: 40,
+    marginBottom: 40,
   },
-}));
-
-const Title = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
-  backgroundSize: "100%",
-  backgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-  textAlign: "left",
-  fontWeight: "300",
-  letterSpacing: 1,
-  paddingBottom: 10,
-  fontSize: 20,
 }));
 
 const ImageContainer = styled("img")(({ theme }) => ({
@@ -55,21 +35,22 @@ const ImageContainer = styled("img")(({ theme }) => ({
 }));
 
 const CircledImage = styled("div")(({ theme }) => ({
-  border: "1px solid #fff",
-  borderRadius: "100%",
+  border: "1px solid #222",
+  borderRadius: "5px",
   padding: "15px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   height: "75px",
-  width: "75px",
+  width: "200px",
+  boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
+  background: "linear-gradient(to top, #fff, #fff)",
   [theme.breakpoints.down("md")]: {
     height: "70px",
-    width: "70px",
+    width: "200px",
     padding: "10px",
   },
 }));
-
 
 const Heading = styled("div")(({ theme }) => ({
   fontFamily: "Helvetica",
@@ -91,32 +72,16 @@ const Heading = styled("div")(({ theme }) => ({
   },
 }));
 
-const Line = styled(Grid)(({ theme }) => ({
-  [theme.breakpoints.down("md")]: {
-    width: 60,
-    borderTop: "1px solid #222",
-  },
-  [theme.breakpoints.up("md")]: {
-    width: 120,
-    borderTop: "1px solid #222",
-  },
-}));
-
 const CONTENT = [
   {
     heading: "Marketplace",
     paragraph: PLAY_PARAGRAPH,
-    image: "/assets/lineart1.png",
+    image: "/assets/white.png",
   },
   {
     heading: "Network",
     paragraph: SHOP_PARAGRAPH,
-    image: "/assets/lineart2.png",
-  },
-  {
-    heading: "Immersive Galleries",
-    paragraph: LEARN_PARAGRAPH,
-    image: "/assets/lineart1.png",
+    image: "/assets/white.png",
   },
 ];
 
@@ -147,31 +112,26 @@ export default function Community() {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              background: "",
             }}
           >
-            <Grid
-              container
-              xs={12}
-              md={6}
-              className="align-self-center"
-              style={{}}
-            >
+            <Grid container xs={12} md={6}>
               <Grid
                 container
+                xs={12}
                 flexDirection={"row"}
                 justifyContent="center"
                 alignItems="center"
+                style={{ marginBottom: 30 }}
               >
                 <style>
                   {`.selected {
                                             background: linear-gradient(90deg, #fff 0%, #fff  100%);
-                                            border: 2px solid black;
-                                            border-radius: 100%;
+                                            border: 1px solid #222;
+                                            border-radius: 6px;
 
                                         }`}
                 </style>
-                <Grid item sm={2} xs={4} style={{ marginBottom: "30px" }}>
+                <Grid container xs={4}>
                   <Button
                     onClick={() => setSelected(0)}
                     style={{ background: "transparent" }}
@@ -192,21 +152,8 @@ export default function Community() {
                     </Grid>
                   </Button>
                 </Grid>
-                <Line
-                  item
-                  sm={1}
-                  xs={0}
-                  style={{
-                    alignSelf: "center",
-                    marginLeft: "50px",
-                    marginRight: "50px",
-                  }}
-                >
-                  <Grid container>
-                    <hr></hr>
-                  </Grid>
-                </Line>
-                <Grid item sm={2} xs={4} style={{ marginBottom: "30px" }}>
+
+                <Grid container xs={4}>
                   <Button
                     onClick={() => setSelected(1)}
                     style={{ background: "transparent" }}
@@ -221,42 +168,6 @@ export default function Community() {
                           src="/assets/connect.png"
                           width="50px"
                           height="50px"
-                          alt=""
-                        />
-                      </CircledImage>
-                    </Grid>
-                  </Button>
-                </Grid>
-                <Line
-                  item
-                  sm={1}
-                  xs={0}
-                  style={{
-                    alignSelf: "center",
-                    marginLeft: "60px",
-                    marginRight: "60px",
-                  }}
-                >
-                  <Grid container>
-                    <hr></hr>
-                  </Grid>
-                </Line>
-
-                <Grid item sm={2} xs={4} style={{ marginBottom: "30px" }}>
-                  <Button
-                    onClick={() => setSelected(2)}
-                    style={{ background: "transparent" }}
-                    disableRipple
-                  >
-                    <Grid
-                      container
-                      className={selected === 2 ? "selected" : ""}
-                    >
-                      <CircledImage>
-                        <img
-                          src="/assets/galleries.png"
-                          width="55px"
-                          height="55px"
                           alt=""
                         />
                       </CircledImage>

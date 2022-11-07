@@ -243,10 +243,10 @@ function Hero() {
             <MainHeading>
               Modern Wealth Management
               <br />
-              All-in-One Workstation
+              Studio For All
             </MainHeading>
             <Paragraph>
-              maximize and protect your overall financial health
+              protect and maximize your overall financial health
               <br />
             </Paragraph>
           </Grid>

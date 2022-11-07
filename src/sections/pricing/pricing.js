@@ -16,7 +16,7 @@ export default function Pricing() {
           <RightTitleBar title="PRICING" content="FLEXIBLE OPTIONS" />
         </Grid>
       </Grid>
-      <Grid container style={{ marginTop: 100, justifyContent: "center" }}>
+      <Grid container style={{ marginTop: 30, justifyContent: "center" }}>
         <Grid item order={md ? 2 : 1} xs={12} lg={8} md={10}>
           <Grid container style={{ justifyItems: "center" }}>
             <Grid item md={6} sm={12} xs={12}>

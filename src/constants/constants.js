@@ -1,11 +1,7 @@
 export const PLAY_PARAGRAPH =
-  "Whether you enjoy games, events or simply hanging out in virtual spaces, we have got you covered. explore numerous worlds and immerse yourself in interactive playing experiences";
+  "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.";
 export const SHOP_PARAGRAPH =
-  "Experience shopping like never before! access your favorite vendors and brands in a convinient and immersive space. If you're selling, hurry up and create your brand space and engage with your customers.";
-export const LEARN_PARAGRAPH =
-  "A 3D learning environemt produces higher interest, enjoyment, and retention than those who enage with other media formats. Discover learning experinces and connect with peers who share your passion.";
-export const WORK_PARAGRAPH =
-  "The Metaverse is reshaping the world of work. Unleash your creativity in a space that allows you to be more productive and collaborate with co-workers in real-time interactive 3D worlds.";
+  "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.";
 
 export const EXPLORERS_PARAGRAPH =
   "We enjoy discovering interactive art experiences in the metaverse and discovering as well as connecting with creative artists from all over the world and supporting their work.";
@@ -14,32 +10,32 @@ export const CREATORS_PARAGRAPH =
 
 export const LEADERSHIP = [
   {
-    heading: "Create with Your favorite Tools",
+    heading: "Contrary to popular belief, Lorem Ipsum",
     contentweb:
-      "We currently support immersive art made with Unity and Unreal engines, two of the most dominant tools for XR development. Both Unity and Unreal have great learning resources. Documentation, tutorials, online courses, etc. ",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.",
     contentmobile:
-      "We currently support immersive art made with Unity and Unreal engines, two of the most dominant tools for XR development. Both Unity and Unreal have great learning resources. Documentation, tutorials, online courses, etc. ",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.",
   },
   {
-    heading: "Deploy on XR Devices, Web and Mobile ",
+    heading: "Contrary to popular belief, Lorem Ipsum",
     contentweb:
-      "Upload your content via the creators studio and conviniently deploy on multiple platforms already built for you where your XR experiences can reach a growing community.",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.",
     contentmobile:
-      "Upload your content via the creators studio and conviniently deploy on multiple platforms already built for you where your XR experiences can reach a growing community.",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.",
   },
   {
-    heading: "Network with Fans and Creators",
+    heading: "Contrary to popular belief, Lorem Ipsum",
     contentweb:
-      "Grow fans and find creators you want to connect with through our social networking platform , reach out to fellow creators to join your network , kick off collaborations, and share ideas and advice with each other.",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.",
     contentmobile:
-      "Grow fans and find creators you want to connect with through our social networking platform, reach out to fellow creators to join your network , kick off collaborations, and share ideas and advice with each other.",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.",
   },
   {
-    heading: "Access World Class Support",
+    heading: "Contrary to popular belief, Lorem Ipsum",
     contentweb:
-      "There's never been a better time to bring your story to life. Your ability to create genuine connections and meaningful interactions is reimagined with Multivurse. To this end, we provide 24/7 support to help bring your vision to life.",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.",
     contentmobile:
-      "There's never been a better time to bring your story to life. Your ability to create genuine connections and meaningful interactions is reimagined with Multivurse. To this end, we provide 24/7 support to help bring your vision to life.",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.",
   },
 ];
 

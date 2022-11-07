@@ -2,30 +2,29 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import LeftTitleBar from "../../components/leftbar";
 import { styled } from "@mui/material/styles";
-import {
-  PLAY_PARAGRAPH,
-  SHOP_PARAGRAPH,
-  LEARN_PARAGRAPH,
-} from "../../constants/constants";
+import { PLAY_PARAGRAPH, SHOP_PARAGRAPH } from "../../constants/constants";
 import { useState } from "react";
 import { Decoration } from "../../components/decoration";
 import { useMediaQuery } from "@mui/material";
 
 const CircledImage = styled("div")(({ theme }) => ({
-  border: "1px solid #fff",
-  borderRadius: "100%",
+  border: "1px solid #222",
+  borderRadius: "5px",
   padding: "15px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   height: "75px",
-  width: "75px",
+  width: "200px",
+  boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
+  background: "linear-gradient(to top, #fff, #fff)",
   [theme.breakpoints.down("md")]: {
     height: "70px",
-    width: "70px",
+    width: "200px",
     padding: "10px",
   },
 }));
+
 const Paragraph = styled("p")(({ theme }) => ({
   textAlign: "justify",
   backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
@@ -88,17 +87,12 @@ const CONTENT = [
   {
     heading: "Marketplace",
     paragraph: PLAY_PARAGRAPH,
-    image: "/assets/lineart1.png",
+    image: "/assets/white.png",
   },
   {
     heading: "Network",
     paragraph: SHOP_PARAGRAPH,
-    image: "/assets/lineart2.png",
-  },
-  {
-    heading: "Immersive Galleries",
-    paragraph: LEARN_PARAGRAPH,
-    image: "/assets/lineart1.png",
+    image: "/assets/white.png",
   },
 ];
 
@@ -132,18 +126,14 @@ export default function Features() {
               background: "",
             }}
           >
-            <Grid
-              container
-              xs={12}
-              md={6}
-              className="align-self-center"
-              style={{}}
-            >
+            <Grid container xs={12} md={6}>
               <Grid
                 container
+                xs={12}
                 flexDirection={"row"}
                 justifyContent="center"
                 alignItems="center"
+                style={{ marginBottom: 30 }}
               >
                 <style>
                   {`.selected {
@@ -153,7 +143,7 @@ export default function Features() {
 
                                         }`}
                 </style>
-                <Grid item sm={2} xs={4} style={{ marginBottom: "30px" }}>
+                <Grid container xs={4}>
                   <Button
                     onClick={() => setSelected(0)}
                     style={{ background: "transparent" }}
@@ -174,21 +164,8 @@ export default function Features() {
                     </Grid>
                   </Button>
                 </Grid>
-                <Line
-                  item
-                  sm={1}
-                  xs={0}
-                  style={{
-                    alignSelf: "center",
-                    marginLeft: "50px",
-                    marginRight: "50px",
-                  }}
-                >
-                  <Grid container>
-                    <hr></hr>
-                  </Grid>
-                </Line>
-                <Grid item sm={2} xs={4} style={{ marginBottom: "30px" }}>
+
+                <Grid container xs={4}>
                   <Button
                     onClick={() => setSelected(1)}
                     style={{ background: "transparent" }}
@@ -203,42 +180,6 @@ export default function Features() {
                           src="/assets/connect.png"
                           width="50px"
                           height="50px"
-                          alt=""
-                        />
-                      </CircledImage>
-                    </Grid>
-                  </Button>
-                </Grid>
-                <Line
-                  item
-                  sm={1}
-                  xs={0}
-                  style={{
-                    alignSelf: "center",
-                    marginLeft: "60px",
-                    marginRight: "60px",
-                  }}
-                >
-                  <Grid container>
-                    <hr></hr>
-                  </Grid>
-                </Line>
-
-                <Grid item sm={2} xs={4} style={{ marginBottom: "30px" }}>
-                  <Button
-                    onClick={() => setSelected(2)}
-                    style={{ background: "transparent" }}
-                    disableRipple
-                  >
-                    <Grid
-                      container
-                      className={selected === 2 ? "selected" : ""}
-                    >
-                      <CircledImage>
-                        <img
-                          src="/assets/galleries.png"
-                          width="55px"
-                          height="55px"
                           alt=""
                         />
                       </CircledImage>

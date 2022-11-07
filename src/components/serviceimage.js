@@ -8,7 +8,7 @@ export default function ServiceImage({ source, borderoutline }) {
         border: borderoutline,
         borderRadius: "16px",
         objectFit: 'cover',
-        padding: "3px",
+        padding: "1px",
       }}
       src={source}
       width={WIDTH}

@@ -94,13 +94,19 @@ export default function Creators() {
                   >
                     <Grid
                       container
-                      style={{ margin: 8 }}
+                      style={{
+                        margin: 8,
+                        boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
+                        borderRadius: "16px",
+                      }}
                       className={selectedLeader === 0 ? "selected-service" : ""}
                     >
                       <ServiceImage
-                        source="/assets/lineart1.png"
+                        source="/assets/white.png"
                         borderoutline={
-                          selectedLeader === 0 ? "2px solid #FFFF00" : ""
+                          selectedLeader === 0
+                            ? "1px solid #222"
+                            : "0.5px solid #222"
                         }
                       />
                     </Grid>
@@ -117,13 +123,19 @@ export default function Creators() {
                   >
                     <Grid
                       container
-                      style={{ margin: 8 }}
+                      style={{
+                        margin: 8,
+                        boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
+                        borderRadius: "16px",
+                      }}
                       className={selectedLeader === 1 ? "selected-service" : ""}
                     >
                       <ServiceImage
-                        source="/assets/lineart2.png"
+                        source="/assets/white.png"
                         borderoutline={
-                          selectedLeader === 1 ? "2px solid #FFFF00" : ""
+                          selectedLeader === 1
+                            ? "1px solid #222"
+                            : "0.5px solid #222"
                         }
                       />
                     </Grid>
@@ -140,13 +152,19 @@ export default function Creators() {
                   >
                     <Grid
                       container
-                      style={{ margin: 8 }}
+                      style={{
+                        margin: 8,
+                        boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
+                        borderRadius: "16px",
+                      }}
                       className={selectedLeader === 2 ? "selected-service" : ""}
                     >
                       <ServiceImage
-                        source="/assets/lineart1.png"
+                        source="/assets/white.png"
                         borderoutline={
-                          selectedLeader === 2 ? "2px solid #FFFF00" : ""
+                          selectedLeader === 2
+                            ? "1px solid #222"
+                            : "0.5px solid #222"
                         }
                       />
                     </Grid>
@@ -163,13 +181,19 @@ export default function Creators() {
                   >
                     <Grid
                       contaier
-                      style={{ margin: 8 }}
+                      style={{
+                        margin: 8,
+                        boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
+                        borderRadius: "16px",
+                      }}
                       className={selectedLeader === 3 ? "selected-service" : ""}
                     >
                       <ServiceImage
-                        source="/assets/lineart2.png"
+                        source="/assets/white.png"
                         borderoutline={
-                          selectedLeader === 3 ? "2px solid #FFFF00" : ""
+                          selectedLeader === 3
+                            ? "1px solid #222"
+                            : "0.5px solid #222"
                         }
                       />
                     </Grid>

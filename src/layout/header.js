@@ -64,7 +64,7 @@ function Header() {
                 height="80%"
                 alt="logo"
               />
-              &nbsp; Noblealts
+              &nbsp; Nebula Wealth
             </div>
           </Grid>
         </Navbar.Brand>
@@ -82,13 +82,13 @@ function Header() {
           <Grid container style={{ marginTop: 25 }} />
           <Nav>
             <NavLink style={navLinkStyles} href="#company">
-              <NavTitle>Features</NavTitle>
-            </NavLink>
-            <NavLink style={navLinkStyles} href="#mission">
               <NavTitle>Clients</NavTitle>
             </NavLink>
+            <NavLink style={navLinkStyles} href="#mission">
+              <NavTitle>Management</NavTitle>
+            </NavLink>
             <NavLink style={navLinkStyles} href="#leadership">
-              <NavTitle>Managers</NavTitle>
+              <NavTitle>Services</NavTitle>
             </NavLink>
             <NavLink style={navLinkStyles} href="#investors">
               <NavTitle>Plans</NavTitle>
