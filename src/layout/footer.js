@@ -52,7 +52,7 @@ function Footer() {
                           marginRight: 50,
                         }}
                       >
-                        NOBLEALTS
+                        NEBULA
                       </h6>
                       <hr
                         style={{
@@ -70,7 +70,7 @@ function Footer() {
               <Grid container spacing={3} justifyContent="center">
                 <Grid item>
                   <Link href="">
-                    <img src="/assets/noble.png" height="60" alt="logo"></img>
+                    <img src="/assets/Nebula.png" height="60" alt="logo"></img>
                   </Link>
                 </Grid>
               </Grid>

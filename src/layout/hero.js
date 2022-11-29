@@ -174,6 +174,38 @@ const MainHeading = styled("div")(({ theme }) => ({
     alignItems: "center",
     textAlign: "center",
     paddingLeft: 0,
+    fontSize: 28,
+    fontWeight: 700,
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    paddingLeft: 0,
+    fontSize: 25,
+    fontWeight: 700,
+  },
+}));
+
+const SubHeading = styled("div")(({ theme }) => ({
+  fontFamily: "Roboto",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  backgroundSize: "100%",
+  backgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+  width: 600,
+  textAlign: "left",
+  paddingLeft: 40,
+  fontWeight: 700,
+  lineHeight: 1.5,
+  fontSize: 25,
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    paddingLeft: 0,
     fontSize: 25,
     fontWeight: 700,
   },
@@ -230,7 +262,7 @@ function Hero() {
         <ArtWrap>
           <Art>
             <img
-              src="/assets/noblehero.png"
+              src="/assets/headshot.png"
               width="100%"
               height="100%"
               alt="One"
@@ -240,13 +272,10 @@ function Hero() {
         </ArtWrap>
         <Description>
           <Grid class="animate__animated animate__slideInLeft">
-            <MainHeading>
-              Modern Wealth Management
-              <br />
-              Studio For All
-            </MainHeading>
+            <MainHeading>Senior Full Stack Engineer</MainHeading>
+            <SubHeading>Front End : Back End : DevOps</SubHeading>
             <Paragraph>
-              protect and maximize your overall financial health
+              Check out my latest project and resume below
               <br />
             </Paragraph>
           </Grid>
@@ -256,30 +285,34 @@ function Hero() {
                 disableRipple
                 variant="outlined"
                 onClick={() =>
-                  openInNewTab("https://explorers.multivurse.com/")
+                  openInNewTab(
+                    "https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume.pdf?alt=media&token=b6ba2bea-f789-48b6-9d2a-d971608cd4a8"
+                  )
                 }
               >
-                Get Started
+                Resume
               </MainButton>
             </Container>
-            {/* <Container class="animate__animated animate__slideInLeft">
+            <Container class="animate__animated animate__slideInLeft">
               <MainButton
                 disableRipple
                 variant="outlined"
-                onClick={() => openInNewTab("https://creators.multivurse.com/")}
+                onClick={() => openInNewTab("https://multivurse.com/")}
               >
-                Creators
+                Latest project
               </MainButton>
-            </Container> */}
+            </Container>
             <Container class="animate__animated animate__slideInLeft">
               <MainButton
                 disableRipple
                 variant="outlined"
                 onClick={() =>
-                  openInNewTab("https://twitter.com/multivurse_art")
+                  openInNewTab(
+                    "https://www.upwork.com/freelancers/~0144e39f7980edb847"
+                  )
                 }
               >
-                Learn More
+                Freelance work
               </MainButton>
             </Container>
           </Buttons>

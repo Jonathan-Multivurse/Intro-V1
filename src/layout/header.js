@@ -58,13 +58,7 @@ function Header() {
         <Navbar.Brand href="/">
           <Grid container fluid>
             <div style={namecontainer} variant="rounded">
-              <img
-                src="/assets/noble.png"
-                width="20%"
-                height="80%"
-                alt="logo"
-              />
-              &nbsp; Nebula Wealth
+              Jonathan
             </div>
           </Grid>
         </Navbar.Brand>
@@ -82,16 +76,16 @@ function Header() {
           <Grid container style={{ marginTop: 25 }} />
           <Nav>
             <NavLink style={navLinkStyles} href="#company">
-              <NavTitle>Clients</NavTitle>
+              <NavTitle>Portfolio</NavTitle>
             </NavLink>
             <NavLink style={navLinkStyles} href="#mission">
-              <NavTitle>Management</NavTitle>
+              <NavTitle>Expertise</NavTitle>
             </NavLink>
             <NavLink style={navLinkStyles} href="#leadership">
-              <NavTitle>Services</NavTitle>
+              <NavTitle>Skills</NavTitle>
             </NavLink>
             <NavLink style={navLinkStyles} href="#investors">
-              <NavTitle>Plans</NavTitle>
+              <NavTitle>Contact</NavTitle>
             </NavLink>
           </Nav>
         </Navbar.Collapse>
