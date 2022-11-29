@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./layout/header";
 import Footer from "./layout/footer";
 import Hero from "./layout/hero";
-import Features from "./sections/features/features";
+import Porfolio from "./sections/portfolio/portfolio";
 import Community from "./sections/community/community";
 import Creators from "./sections/creators/creators";
 import Pricing from "./sections/pricing/pricing";
@@ -48,7 +48,7 @@ function App() {
           >
             <Header />
             <Hero />
-            <Features />
+            <Porfolio />
             <Community />
             <Creators />
             <Pricing />

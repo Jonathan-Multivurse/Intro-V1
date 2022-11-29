@@ -2,16 +2,6 @@ import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 import "animate.css";
 
-const Container = styled(Grid)(({ theme }) => ({
-  display: "flex",
-  justifyContent: "left",
-  [theme.breakpoints.down("md")]: {
-    display: "flex",
-    justifyContent: "center",
-    paddingRight: "40px",
-  },
-}));
-
 const HeroWrapp = styled(Grid)(({ theme }) => ({
   height: 700,
   marginTop: 50,
@@ -75,6 +65,7 @@ const Buttons = styled(Grid)(({ theme }) => ({
   alignItems: "center",
   paddingLeft: 40,
   [theme.breakpoints.down("md")]: {
+    display: "flex",
     justifyContent: "center",
     paddingLeft: 0,
   },
@@ -162,61 +153,60 @@ const MainHeading = styled("div")(({ theme }) => ({
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
-  width: 600,
+  width: "100%",
   textAlign: "left",
   paddingLeft: 40,
   fontWeight: 700,
   lineHeight: 1.5,
-  fontSize: 35,
+  fontSize: 30,
   [theme.breakpoints.down("md")]: {
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    paddingLeft: 0,
+    fontSize: 30,
+    fontWeight: 500,
+  },
+  [theme.breakpoints.down("sm")]: {
     width: "100%",
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
     paddingLeft: 0,
     fontSize: 28,
-    fontWeight: 700,
-  },
-  [theme.breakpoints.down("sm")]: {
-    width: "100%",
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
-    paddingLeft: 0,
-    fontSize: 25,
-    fontWeight: 700,
+    fontWeight: 500,
   },
 }));
 
 const SubHeading = styled("div")(({ theme }) => ({
   fontFamily: "Roboto",
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
-  backgroundSize: "100%",
-  backgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-  width: 600,
-  textAlign: "left",
+  backgroundColor: "transparent",
+  color: "#222",
+  width: 450,
+  textAlign: "center",
+  display: "flex",
+  justifyContent: "left",
+  alignItems: "center",
+  fontWeight: 500,
   paddingLeft: 40,
-  fontWeight: 700,
   lineHeight: 1.5,
-  fontSize: 25,
+  fontSize: 20,
   [theme.breakpoints.down("md")]: {
     width: "100%",
+    fontSize: 22,
+    display: "flex",
     justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
     paddingLeft: 0,
-    fontSize: 25,
-    fontWeight: 700,
+    alignItems: "center",
   },
   [theme.breakpoints.down("sm")]: {
     width: "100%",
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
-    paddingLeft: 0,
     fontSize: 22,
-    fontWeight: 700,
+    display: "flex",
+    justifyContent: "center",
+    paddingLeft: 0,
+    alignItems: "center",
   },
 }));
 
@@ -266,55 +256,50 @@ function Hero() {
               width="100%"
               height="100%"
               alt="One"
-              class="animate__animated animate__slideInLeft"
             />
           </Art>
         </ArtWrap>
         <Description>
-          <Grid class="animate__animated animate__slideInLeft">
+          <Grid>
             <MainHeading>Senior Full Stack Engineer</MainHeading>
-            <SubHeading>Front End : Back End : DevOps</SubHeading>
+            <SubHeading>Frontend : Backend : Platform</SubHeading>
             <Paragraph>
               Check out my latest project and resume below
               <br />
             </Paragraph>
           </Grid>
           <Buttons>
-            <Container class="animate__animated animate__slideInLeft">
-              <MainButton
-                disableRipple
-                variant="outlined"
-                onClick={() =>
-                  openInNewTab(
-                    "https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume.pdf?alt=media&token=b6ba2bea-f789-48b6-9d2a-d971608cd4a8"
-                  )
-                }
-              >
-                Resume
-              </MainButton>
-            </Container>
-            <Container class="animate__animated animate__slideInLeft">
-              <MainButton
-                disableRipple
-                variant="outlined"
-                onClick={() => openInNewTab("https://multivurse.com/")}
-              >
-                Latest project
-              </MainButton>
-            </Container>
-            <Container class="animate__animated animate__slideInLeft">
-              <MainButton
-                disableRipple
-                variant="outlined"
-                onClick={() =>
-                  openInNewTab(
-                    "https://www.upwork.com/freelancers/~0144e39f7980edb847"
-                  )
-                }
-              >
-                Freelance work
-              </MainButton>
-            </Container>
+            <MainButton
+              disableRipple
+              variant="outlined"
+              onClick={() =>
+                openInNewTab(
+                  "https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume.pdf?alt=media&token=b6ba2bea-f789-48b6-9d2a-d971608cd4a8"
+                )
+              }
+            >
+              Resume
+            </MainButton>
+
+            <MainButton
+              disableRipple
+              variant="outlined"
+              onClick={() => openInNewTab("https://multivurse.com/")}
+            >
+              Latest project
+            </MainButton>
+
+            <MainButton
+              disableRipple
+              variant="outlined"
+              onClick={() =>
+                openInNewTab(
+                  "https://www.upwork.com/freelancers/~0144e39f7980edb847"
+                )
+              }
+            >
+              Freelance work
+            </MainButton>
           </Buttons>
         </Description>
       </HeroWrapp>
