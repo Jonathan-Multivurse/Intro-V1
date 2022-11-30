@@ -141,31 +141,32 @@ const IMG = styled("img")(({ theme }) => ({
   },
 }));
 
+
 const CONTENT = [
   {
     heading: "Frontend",
-    image: "/assets/Port1.png",
-    link: "https://prometheusalts.com/",
+    image: "/assets/front.png",
+    link: "https://www.linkedin.com/in/j2daniels/",
   },
   {
     heading: "Backend",
-    image: "/assets/Port2.png",
-    link: "https://www.goosefx.io/",
+    image: "/assets/back.png",
+    link: "https://www.linkedin.com/in/j2daniels/",
   },
   {
     heading: "Platform",
-    image: "/assets/Port3.png",
-    link: "https://rubix.io/",
+    image: "/assets/cloud.png",
+    link: "https://www.linkedin.com/in/j2daniels/",
   },
   {
     heading: "Data Science",
-    image: "/assets/Port4.png",
-    link: "https://www.withlean.com/",
+    image: "/assets/data.png",
+    link: "https://www.linkedin.com/in/j2daniels/",
   },
   {
     heading: "Machine Learning",
-    image: "/assets/Port5.png",
-    link: "https://founderpath.com/",
+    image: "/assets/intell.png",
+    link: "https://www.linkedin.com/in/j2daniels/",
   },
 ];
 
@@ -325,7 +326,7 @@ export default function Creators() {
                       marginLeft: 20,
                     }}
                   >
-                    View Project
+                    Learn more
                   </Typography>
                 </Button>
               </BannerRight>
