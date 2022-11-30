@@ -70,7 +70,7 @@ export default function Creators() {
     <Grid container id="leadership">
       <Grid container>
         <Grid item md={5} xs={10}>
-          <LeftTitleBar title={"MANAGERS"} content={"THE PROFESSIONALS"} />
+          <LeftTitleBar title={"SKILLS"} content={"TECHNICAL KNOWHOW"} />
         </Grid>
       </Grid>
       <Grid container style={{ marginTop: "75px" }}>

@@ -16,10 +16,6 @@ const RIGHT_TITLE_BAR = styled(Grid)(() => ({
 }));
 
 const Title = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
-  backgroundSize: "100%",
-  backgroundClip: "text",
-  WebkitTextFillColor: "transparent",
   textAlign: "left",
   color: "#222",
   fontFamily: "Roboto",

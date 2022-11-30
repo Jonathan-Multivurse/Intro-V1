@@ -1,12 +1,12 @@
 import Grid from "@mui/material/Grid";
+import RightTitleBar from "../../components/rightbar";
 import Button from "@mui/material/Button";
-import LeftTitleBar from "../../components/leftbar";
-import { styled } from "@mui/material/styles";
 import { useState } from "react";
+import { styled } from "@mui/material/styles";
 import { RemoveRedEye } from "@mui/icons-material";
 import Typography from "@mui/material/Typography";
 
-const List = styled("div")(({ theme }) => ({
+const List2 = styled("div")(({ theme }) => ({
   border: "1px solid #222",
   borderRadius: 18,
   padding: "15px",
@@ -16,17 +16,17 @@ const List = styled("div")(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   height: "75px",
-  width: "200px",
+  width: "300px",
   boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
   background: "linear-gradient(to top, #fff, #fff)",
   [theme.breakpoints.down("md")]: {
-    height: "60px",
-    width: "200px",
+    height: "75px",
+    width: "250px",
     padding: "10px",
   },
   [theme.breakpoints.down("sm")]: {
-    height: "50px",
-    width: "200px",
+    height: "75px",
+    width: "150px",
     padding: "10px",
   },
 }));
@@ -45,6 +45,7 @@ const Heading = styled("div")(({ theme }) => ({
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
   [theme.breakpoints.down("md")]: {
+    textAlign: "center",
     marginTop: "10px",
     marginBottom: "10px",
     fontSize: 25,
@@ -132,29 +133,14 @@ const IMG = styled("img")(({ theme }) => ({
 
 const CONTENT = [
   {
-    heading: "Prometheus",
-    image: "/assets/Port1.png",
-    link: "https://prometheusalts.com/",
+    heading: "Cross Platform Modern Stack Applications",
+    image: "/assets/code.png",
+    link: "https://www.linkedin.com/in/j2daniels/",
   },
   {
-    heading: "GooseFX",
-    image: "/assets/Port2.png",
-    link: "https://www.goosefx.io/",
-  },
-  {
-    heading: "Rubix",
-    image: "/assets/Port3.png",
-    link: "https://rubix.io/",
-  },
-  {
-    heading: "Lean",
-    image: "/assets/Port4.png",
-    link: "https://www.withlean.com/",
-  },
-  {
-    heading: "Founderpath",
-    image: "/assets/Port5.png",
-    link: "https://founderpath.com/",
+    heading: "Software Intelligence & Automation",
+    image: "/assets/automation.png",
+    link: "https://www.linkedin.com/in/j2daniels/",
   },
 ];
 
@@ -163,18 +149,17 @@ const openInNewTab = (url) => {
   if (newWindow) newWindow.opener = null;
 };
 
-export default function Features() {
+export default function Community() {
   const [selected, setSelected] = useState(0);
-
   return (
-    <div id="company">
-      <Grid container>
-        <Grid item md={5} xs={10}>
-          <LeftTitleBar title={"PORTFOLIO"} content={"SOME OF MY WORK"} />
+    <Grid style={{ color: "#222" }} id="mission">
+      <Grid container justifyContent={"flex-end"}>
+        <Grid item xs={10} md={5}>
+          <RightTitleBar title="EXPERTISE" content="MY SPECIALIZATION" />
         </Grid>
       </Grid>
       <Wrap>
-        <Grid item xs={12} md={12}>
+        <Grid item xs={12} md={12} lg={12}>
           <Grid
             container
             style={{
@@ -184,14 +169,17 @@ export default function Features() {
               alignItems: "center",
             }}
           >
-            <Grid container xs={12} md={6}>
+            <Grid xs={12} md={6}>
               <Grid
                 container
                 xs={12}
-                flexDirection={"row"}
-                justifyContent="space-around"
-                alignItems="center"
-                style={{ marginBottom: 30 }}
+                style={{
+                  width: "800px",
+                  marginBottom: 30,
+                  display: "flex",
+                  justifyContent: "space-around",
+                  alignItems: "center",
+                }}
               >
                 <style>
                   {`.selected {
@@ -201,74 +189,26 @@ export default function Features() {
 
                                         }`}
                 </style>
-                <Grid container xs={2}>
+                <Grid xs={6}>
                   <Button
                     onClick={() => setSelected(0)}
                     style={{ background: "transparent" }}
                     disableRipple
                   >
-                    <Grid
-                      container
-                      className={selected === 0 ? "selected" : ""}
-                    >
-                      <List>1</List>
+                    <Grid className={selected === 0 ? "selected" : ""}>
+                      <List2>A</List2>
                     </Grid>
                   </Button>
                 </Grid>
-                <Grid container xs={2}>
+
+                <Grid xs={6}>
                   <Button
                     onClick={() => setSelected(1)}
                     style={{ background: "transparent" }}
                     disableRipple
                   >
-                    <Grid
-                      container
-                      className={selected === 1 ? "selected" : ""}
-                    >
-                      <List>2</List>
-                    </Grid>
-                  </Button>
-                </Grid>
-                <Grid container xs={2}>
-                  <Button
-                    onClick={() => setSelected(2)}
-                    style={{ background: "transparent" }}
-                    disableRipple
-                  >
-                    <Grid
-                      container
-                      className={selected === 2 ? "selected" : ""}
-                    >
-                      <List>3</List>
-                    </Grid>
-                  </Button>
-                </Grid>
-                <Grid container xs={2}>
-                  <Button
-                    onClick={() => setSelected(3)}
-                    style={{ background: "transparent" }}
-                    disableRipple
-                  >
-                    <Grid
-                      container
-                      className={selected === 3 ? "selected" : ""}
-                    >
-                      <List>4</List>
-                    </Grid>
-                  </Button>
-                </Grid>
-
-                <Grid container xs={2}>
-                  <Button
-                    onClick={() => setSelected(4)}
-                    style={{ background: "transparent" }}
-                    disableRipple
-                  >
-                    <Grid
-                      container
-                      className={selected === 4 ? "selected" : ""}
-                    >
-                      <List>5</List>
+                    <Grid className={selected === 1 ? "selected" : ""}>
+                      <List2>B</List2>
                     </Grid>
                   </Button>
                 </Grid>
@@ -307,7 +247,7 @@ export default function Features() {
                       marginLeft: 20,
                     }}
                   >
-                    View Project
+                    Learn more
                   </Typography>
                 </Button>
               </BannerRight>
@@ -315,6 +255,6 @@ export default function Features() {
           </Grid>
         </Grid>
       </Wrap>
-    </div>
+    </Grid>
   );
 }

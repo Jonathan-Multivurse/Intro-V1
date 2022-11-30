@@ -4,9 +4,8 @@ import Header from "./layout/header";
 import Footer from "./layout/footer";
 import Hero from "./layout/hero";
 import Porfolio from "./sections/portfolio/portfolio";
-import Community from "./sections/community/community";
-import Creators from "./sections/creators/creators";
-import Pricing from "./sections/pricing/pricing";
+import Expertise from "./sections/expertise/expertise";
+import Creators from "./sections/skills/skills";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState, useEffect } from "react";
 import BounceLoader from "react-spinners/BounceLoader";
@@ -49,9 +48,8 @@ function App() {
             <Header />
             <Hero />
             <Porfolio />
-            <Community />
+            <Expertise />
             <Creators />
-            <Pricing />
             <Footer />
           </div>
         </ThemeProvider>
