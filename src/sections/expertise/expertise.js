@@ -16,17 +16,17 @@ const List2 = styled("div")(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   height: "75px",
-  width: "300px",
+  width: "250px",
   boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
   background: "linear-gradient(to top, #fff, #fff)",
   [theme.breakpoints.down("md")]: {
     height: "75px",
-    width: "250px",
+    width: "200px",
     padding: "10px",
   },
   [theme.breakpoints.down("sm")]: {
     height: "75px",
-    width: "150px",
+    width: "175px",
     padding: "10px",
   },
 }));
@@ -52,6 +52,27 @@ const Heading = styled("div")(({ theme }) => ({
   },
 }));
 
+const Sub = styled("div")(({ theme }) => ({
+  fontFamily: "Helvetica",
+  textAlign: "left",
+  fontWeight: 700,
+  letterSpacing: 1,
+  lineHeight: "120%",
+  textTransform: "capitalize",
+  fontSize: 20,
+  marginBottom: "15px",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  backgroundSize: "100%",
+  backgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+  [theme.breakpoints.down("md")]: {
+    textAlign: "center",
+    marginTop: "10px",
+    marginBottom: "10px",
+    fontSize: 23,
+  },
+}));
+
 const Wrap = styled("div")(({ theme }) => ({
   marginTop: 50,
   [theme.breakpoints.down("md")]: {
@@ -68,7 +89,7 @@ const Wrap = styled("div")(({ theme }) => ({
 
 const PortfolioItem = styled("div")(({ theme }) => ({
   height: 500,
-  width: "100%",
+  width: "65%",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -76,10 +97,11 @@ const PortfolioItem = styled("div")(({ theme }) => ({
   borderRadius: "15px",
   marginTop: "20px",
   boxShadow: "0px 10px 15px 3px rgba(0,0,0,0.1)",
-  [theme.breakpoints.up("md")]: {
-    width: "60%",
+  [theme.breakpoints.down("lg")]: {
+    flexDirection: "column",
+    width: "500px",
   },
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
     width: "100%",
   },
@@ -92,10 +114,13 @@ const BannerLeft = styled("div")(({ theme }) => ({
   alignItems: "center",
   justifyContent: "center",
   borderRight: "1px solid #222",
-  [theme.breakpoints.up("md")]: {
-    width: "50%",
+  [theme.breakpoints.down("lg")]: {
+    borderRight: "none",
+    borderBottom: "1px solid #222",
+    height: "50%",
+    width: "100%",
   },
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down("sm")]: {
     borderRight: "none",
     borderBottom: "1px solid #222",
     height: 300,
@@ -123,7 +148,14 @@ const IMG = styled("img")(({ theme }) => ({
   borderTopLeftRadius: 15,
   borderBottomLeftRadius: 15,
   objectFit: "cover",
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down("lg")]: {
+    borderTopLeftRadius: 15,
+    borderBottomLeftRadius: 0,
+    borderTopRightRadius: 15,
+    objectFit: "cover",
+    width: "100%",
+  },
+  [theme.breakpoints.down("sm")]: {
     borderTopLeftRadius: 15,
     borderBottomLeftRadius: 0,
     borderTopRightRadius: 15,
@@ -134,11 +166,13 @@ const IMG = styled("img")(({ theme }) => ({
 const CONTENT = [
   {
     heading: "Cross Platform Modern Stack Applications",
+    sub: "Web, Mobile, & Beyond",
     image: "/assets/code.png",
     link: "https://www.linkedin.com/in/j2daniels/",
   },
   {
     heading: "Software Intelligence & Automation",
+    sub: "Data & Machine Learning",
     image: "/assets/automation.png",
     link: "https://www.linkedin.com/in/j2daniels/",
   },
@@ -169,10 +203,12 @@ export default function Community() {
               alignItems: "center",
             }}
           >
-            <Grid xs={12} md={6}>
+            <Grid xs={12} md={8} display={"flex"} justifyContent={"center"}>
               <Grid
                 container
                 xs={12}
+                md={12}
+                sm={9}
                 style={{
                   width: "800px",
                   marginBottom: 30,
@@ -216,6 +252,7 @@ export default function Community() {
             </Grid>
 
             <Heading>{CONTENT[selected].heading}</Heading>
+            <Sub>{CONTENT[selected].sub}</Sub>
             <PortfolioItem>
               <BannerLeft>
                 <IMG src={CONTENT[selected].image} alt="One" />

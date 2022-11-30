@@ -84,7 +84,7 @@ function Header() {
             <NavLink style={navLinkStyles} href="#leadership">
               <NavTitle>Skills</NavTitle>
             </NavLink>
-            <NavLink style={navLinkStyles} href="#investors">
+            <NavLink style={navLinkStyles} href="#contact">
               <NavTitle>Contact</NavTitle>
             </NavLink>
           </Nav>

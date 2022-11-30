@@ -67,7 +67,7 @@ const Wrap = styled("div")(({ theme }) => ({
 
 const PortfolioItem = styled("div")(({ theme }) => ({
   height: 500,
-  width: "100%",
+  width: "65%",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -75,10 +75,11 @@ const PortfolioItem = styled("div")(({ theme }) => ({
   borderRadius: "15px",
   marginTop: "20px",
   boxShadow: "0px 10px 15px 3px rgba(0,0,0,0.1)",
-  [theme.breakpoints.up("md")]: {
-    width: "60%",
+  [theme.breakpoints.down("lg")]: {
+    flexDirection: "column",
+    width: "500px",
   },
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
     width: "100%",
   },
@@ -91,10 +92,13 @@ const BannerLeft = styled("div")(({ theme }) => ({
   alignItems: "center",
   justifyContent: "center",
   borderRight: "1px solid #222",
-  [theme.breakpoints.up("md")]: {
-    width: "50%",
+  [theme.breakpoints.down("lg")]: {
+    borderRight: "none",
+    borderBottom: "1px solid #222",
+    height: "50%",
+    width: "100%",
   },
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down("sm")]: {
     borderRight: "none",
     borderBottom: "1px solid #222",
     height: 300,
@@ -122,7 +126,14 @@ const IMG = styled("img")(({ theme }) => ({
   borderTopLeftRadius: 15,
   borderBottomLeftRadius: 15,
   objectFit: "cover",
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down("lg")]: {
+    borderTopLeftRadius: 15,
+    borderBottomLeftRadius: 0,
+    borderTopRightRadius: 15,
+    objectFit: "cover",
+    width: "100%",
+  },
+  [theme.breakpoints.down("sm")]: {
     borderTopLeftRadius: 15,
     borderBottomLeftRadius: 0,
     borderTopRightRadius: 15,
@@ -184,14 +195,16 @@ export default function Features() {
               alignItems: "center",
             }}
           >
-            <Grid container xs={12} md={6}>
+            <Grid container xs={12} md={8} display={"flex"} justifyContent={"center"}>
               <Grid
                 container
                 xs={12}
+                md={12}
+                sm={9}
                 flexDirection={"row"}
                 justifyContent="space-around"
                 alignItems="center"
-                style={{ marginBottom: 30 }}
+                style={{ marginBottom: 30,}}
               >
                 <style>
                   {`.selected {

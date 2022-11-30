@@ -1,308 +1,338 @@
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import LeftTitleBar from "../../components/leftbar";
-import ServiceImage from "../../components/serviceimage";
-import { useState } from "react";
-import { LEADERSHIP } from "../../constants/constants";
-import { Decoration } from "../../components/decoration";
 import { RemoveRedEye } from "@mui/icons-material";
+import { useState } from "react";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+
+const List = styled("div")(({ theme }) => ({
+  border: "1px solid #222",
+  borderRadius: 18,
+  padding: "15px",
+  fontSize: 25,
+  fontWeight: "bolder",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "75px",
+  width: "200px",
+  boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
+  background: "linear-gradient(to top, #fff, #fff)",
+  [theme.breakpoints.down("md")]: {
+    height: "60px",
+    width: "200px",
+    padding: "10px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    height: "50px",
+    width: "200px",
+    padding: "10px",
+  },
+}));
+
+const Heading = styled("div")(({ theme }) => ({
+  fontFamily: "Helvetica",
+  textAlign: "left",
+  fontWeight: 500,
+  letterSpacing: 2,
+  lineHeight: "120%",
+  textTransform: "capitalize",
+  fontSize: 28,
+  marginBottom: "15px",
+  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  backgroundSize: "100%",
+  backgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+  [theme.breakpoints.down("md")]: {
+    marginTop: "10px",
+    marginBottom: "10px",
+    fontSize: 25,
+  },
+}));
+
+const Wrap = styled("div")(({ theme }) => ({
+  marginTop: 50,
+  [theme.breakpoints.down("md")]: {
+    marginTop: 50,
+    marginLeft: 25,
+    marginRight: 25,
+  },
+  [theme.breakpoints.up("md")]: {
+    marginTop: 50,
+    marginLeft: 25,
+    marginRight: 25,
+  },
+}));
+
+const PortfolioItem = styled("div")(({ theme }) => ({
+  height: 500,
+  width: "65%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  flexDirection: "row",
+  borderRadius: "15px",
+  marginTop: "20px",
+  boxShadow: "0px 10px 15px 3px rgba(0,0,0,0.1)",
+  [theme.breakpoints.down("lg")]: {
+    flexDirection: "column",
+    width: "500px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    flexDirection: "column",
+    width: "100%",
+  },
+}));
+
+const BannerLeft = styled("div")(({ theme }) => ({
+  height: 500,
+  width: "50%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  borderRight: "1px solid #222",
+  [theme.breakpoints.down("lg")]: {
+    borderRight: "none",
+    borderBottom: "1px solid #222",
+    height: "50%",
+    width: "100%",
+  },
+  [theme.breakpoints.down("sm")]: {
+    borderRight: "none",
+    borderBottom: "1px solid #222",
+    height: 300,
+    width: "100%",
+  },
+}));
+
+const BannerRight = styled("div")(({ theme }) => ({
+  height: 500,
+  width: "50%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  [theme.breakpoints.up("md")]: {
+    width: "50%",
+  },
+  [theme.breakpoints.down("md")]: {
+    width: "75%",
+  },
+}));
+
+const IMG = styled("img")(({ theme }) => ({
+  height: "100%",
+  width: "100%",
+  borderTopLeftRadius: 15,
+  borderBottomLeftRadius: 15,
+  objectFit: "cover",
+  [theme.breakpoints.down("lg")]: {
+    borderTopLeftRadius: 15,
+    borderBottomLeftRadius: 0,
+    borderTopRightRadius: 15,
+    objectFit: "cover",
+    width: "100%",
+  },
+  [theme.breakpoints.down("sm")]: {
+    borderTopLeftRadius: 15,
+    borderBottomLeftRadius: 0,
+    borderTopRightRadius: 15,
+    width: "100%",
+  },
+}));
+
+const CONTENT = [
+  {
+    heading: "Frontend",
+    image: "/assets/Port1.png",
+    link: "https://prometheusalts.com/",
+  },
+  {
+    heading: "Backend",
+    image: "/assets/Port2.png",
+    link: "https://www.goosefx.io/",
+  },
+  {
+    heading: "Platform",
+    image: "/assets/Port3.png",
+    link: "https://rubix.io/",
+  },
+  {
+    heading: "Data Science",
+    image: "/assets/Port4.png",
+    link: "https://www.withlean.com/",
+  },
+  {
+    heading: "Machine Learning",
+    image: "/assets/Port5.png",
+    link: "https://founderpath.com/",
+  },
+];
 
 const openInNewTab = (url) => {
   const newWindow = window.open(url, "_blank");
   if (newWindow) newWindow.opener = null;
 };
 
-const LinkedInTop = styled("div")(({ theme }) => ({
-  display: "flex",
-  justifyContent: "flex-start",
-  marginTop: 10,
-  [theme.breakpoints.up("sm")]: {
-    display: "none",
-  },
-}));
-
-const LinkedInBottom = styled("div")(({ theme }) => ({
-  display: "flex",
-  justifyContent: "flex-start",
-  marginTop: 100,
-  [theme.breakpoints.down("sm")]: {
-    display: "none",
-  },
-}));
-
-const Title = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
-  backgroundSize: "100%",
-  backgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-  textAlign: "left",
-  fontWeight: "300",
-  letterSpacing: 1,
-  paddingBottom: 10,
-  fontSize: 20,
-}));
-
-const ContentWeb = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
-  backgroundSize: "100%",
-  backgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-  [theme.breakpoints.down("sm")]: {
-    display: "none",
-  },
-}));
-
-const ContentMobile = styled("p")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
-  backgroundSize: "100%",
-  backgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-  [theme.breakpoints.up("sm")]: {
-    display: "none",
-  },
-}));
-
 export default function Creators() {
-  const [selectedLeader, setSelectedLeader] = useState(0);
+  const [selected, setSelected] = useState(0);
   return (
-    <Grid container id="leadership">
+    <div id="leadership">
       <Grid container>
         <Grid item md={5} xs={10}>
           <LeftTitleBar title={"SKILLS"} content={"TECHNICAL KNOWHOW"} />
         </Grid>
       </Grid>
-      <Grid container style={{ marginTop: "75px" }}>
-        <Grid item xs={5}>
-          <Grid container justifyContent="center">
-            <Grid item xs={8} className="align-self-center">
-              <style>
-                {`
-                                        .selected-service {
-                                          background: linear-gradient(90deg, #222 0%, #222  100%);
-                                          border-radius: 16px;
-                                    }
-                                `}
-              </style>
-              <Grid spacing={1} container justifyContent="center">
-                <Grid item>
-                  <Button
-                    onClick={() => setSelectedLeader(0)}
-                    style={{ background: "transparent" }}
-                    disableRipple
-                  >
-                    <Grid
-                      container
-                      style={{
-                        margin: 8,
-                        boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-                        borderRadius: "16px",
-                      }}
-                      className={selectedLeader === 0 ? "selected-service" : ""}
-                    >
-                      <ServiceImage
-                        source="/assets/white.png"
-                        borderoutline={
-                          selectedLeader === 0
-                            ? "1px solid #222"
-                            : "0.5px solid #222"
-                        }
-                      />
-                    </Grid>
-                  </Button>
-                </Grid>
-              </Grid>
-
-              <Grid container spacing={1} justifyContent="center">
-                <Grid item>
-                  <Button
-                    onClick={() => setSelectedLeader(1)}
-                    style={{ background: "transparent" }}
-                    disableRipple
-                  >
-                    <Grid
-                      container
-                      style={{
-                        margin: 8,
-                        boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-                        borderRadius: "16px",
-                      }}
-                      className={selectedLeader === 1 ? "selected-service" : ""}
-                    >
-                      <ServiceImage
-                        source="/assets/white.png"
-                        borderoutline={
-                          selectedLeader === 1
-                            ? "1px solid #222"
-                            : "0.5px solid #222"
-                        }
-                      />
-                    </Grid>
-                  </Button>
-                </Grid>
-              </Grid>
-
-              <Grid container spacing={1} justifyContent="center">
-                <Grid item>
-                  <Button
-                    onClick={() => setSelectedLeader(2)}
-                    style={{ background: "transparent" }}
-                    disableRipple
-                  >
-                    <Grid
-                      container
-                      style={{
-                        margin: 8,
-                        boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-                        borderRadius: "16px",
-                      }}
-                      className={selectedLeader === 2 ? "selected-service" : ""}
-                    >
-                      <ServiceImage
-                        source="/assets/white.png"
-                        borderoutline={
-                          selectedLeader === 2
-                            ? "1px solid #222"
-                            : "0.5px solid #222"
-                        }
-                      />
-                    </Grid>
-                  </Button>
-                </Grid>
-              </Grid>
-
-              <Grid container spacing={1} justifyContent="center">
-                <Grid item>
-                  <Button
-                    onClick={() => setSelectedLeader(3)}
-                    style={{ background: "transparent" }}
-                    disableRipple
-                  >
-                    <Grid
-                      contaier
-                      style={{
-                        margin: 8,
-                        boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-                        borderRadius: "16px",
-                      }}
-                      className={selectedLeader === 3 ? "selected-service" : ""}
-                    >
-                      <ServiceImage
-                        source="/assets/white.png"
-                        borderoutline={
-                          selectedLeader === 3
-                            ? "1px solid #222"
-                            : "0.5px solid #222"
-                        }
-                      />
-                    </Grid>
-                  </Button>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid item xs={7} style={{ marginTop: "20px" }}>
-          <Grid container style={{ paddingRight: "30px" }}>
-            <Grid item xs={12}>
-              <Title>{LEADERSHIP[selectedLeader].heading}</Title>
-
-              <hr
-                style={{
-                  height: 1.5,
-                  width: "80%",
-                  border: "none",
-                  background:
-                    "linear-gradient(90deg, #f6d5f7 0%, #fbe9d7 100%)",
-                  opacity: 0.8,
-                }}
-              ></hr>
-            </Grid>
-          </Grid>
-          <Grid container md={9} sm={9} xs={10}>
-            {/* <LinkedInTop>
-              <Button
-                variant="outlined"
-                disableRipple
-                style={{
-                  borderRadius: "20px",
-                  height: 50,
-                  width: 200,
-                  border: "1px solid #fbe9d7",
-                  justifyContent: "left",
-                }}
-                onClick={() => openInNewTab()}
-              >
-                <RemoveRedEye fontSize="small" style={{ color: "#fbe9d7" }} />
-                <Typography
-                  style={{
-                    textAlign: "justify",
-                    color: "#fbe9d7",
-                    fontFamily: "Roboto",
-                    textTransform: "capitalize",
-                    fontWeight: 300,
-                    letterSpacing: 1,
-                    lineHeight: 1.5,
-                    fontSize: 14,
-                    marginLeft: 10,
-                  }}
-                >
-                  Go
-                </Typography>
-              </Button>
-            </LinkedInTop> */}
+      <Wrap>
+        <Grid item xs={12} md={12}>
+          <Grid
+            container
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <Grid
-              item
-              style={{
-                textAlign: "justify",
-                color: "#222",
-                fontFamily: "Roboto",
-                fontWeight: 300,
-                letterSpacing: 1,
-                lineHeight: 2,
-                marginTop: 25,
-              }}
+              container
+              xs={12}
+              md={8}
+              display={"flex"}
+              justifyContent={"center"}
             >
-              <ContentWeb>{LEADERSHIP[selectedLeader].contentweb}</ContentWeb>
-              <ContentMobile>
-                {LEADERSHIP[selectedLeader].contentmobile}
-              </ContentMobile>
-            </Grid>
-          </Grid>
-          {/* <LinkedInBottom>
-            <Button
-              variant="outlined"
-              disableRipple
-              style={{
-                borderRadius: "20px",
-                height: 50,
-                width: 200,
-                border: "1px solid #fbe9d7",
-                justifyContent: "left",
-              }}
-              onClick={() => openInNewTab()}
-            >
-              <RemoveRedEye fontSize="small" style={{ color: "#fbe9d7" }} />
-              <Typography
-                style={{
-                  textAlign: "justify",
-                  color: "#fbe9d7",
-                  fontFamily: "Roboto",
-                  textTransform: "capitalize",
-                  fontWeight: 300,
-                  letterSpacing: 1,
-                  lineHeight: 1.5,
-                  fontSize: 14,
-                  marginLeft: 10,
-                }}
+              <Grid
+                container
+                xs={12}
+                md={12}
+                sm={9}
+                flexDirection={"row"}
+                justifyContent="space-around"
+                alignItems="center"
+                style={{ marginBottom: 30 }}
               >
-                Go
-              </Typography>
-            </Button>
-          </LinkedInBottom> */}
+                <style>
+                  {`.selected {
+                                            background: linear-gradient(90deg, #fff 0%, #fff  100%);
+                                            border: 2px solid black;
+                                            border-radius: 20px;
+
+                                        }`}
+                </style>
+                <Grid container xs={2}>
+                  <Button
+                    onClick={() => setSelected(0)}
+                    style={{ background: "transparent" }}
+                    disableRipple
+                  >
+                    <Grid
+                      container
+                      className={selected === 0 ? "selected" : ""}
+                    >
+                      <List>I</List>
+                    </Grid>
+                  </Button>
+                </Grid>
+                <Grid container xs={2}>
+                  <Button
+                    onClick={() => setSelected(1)}
+                    style={{ background: "transparent" }}
+                    disableRipple
+                  >
+                    <Grid
+                      container
+                      className={selected === 1 ? "selected" : ""}
+                    >
+                      <List>II</List>
+                    </Grid>
+                  </Button>
+                </Grid>
+                <Grid container xs={2}>
+                  <Button
+                    onClick={() => setSelected(2)}
+                    style={{ background: "transparent" }}
+                    disableRipple
+                  >
+                    <Grid
+                      container
+                      className={selected === 2 ? "selected" : ""}
+                    >
+                      <List>III</List>
+                    </Grid>
+                  </Button>
+                </Grid>
+                <Grid container xs={2}>
+                  <Button
+                    onClick={() => setSelected(3)}
+                    style={{ background: "transparent" }}
+                    disableRipple
+                  >
+                    <Grid
+                      container
+                      className={selected === 3 ? "selected" : ""}
+                    >
+                      <List>IV</List>
+                    </Grid>
+                  </Button>
+                </Grid>
+
+                <Grid container xs={2}>
+                  <Button
+                    onClick={() => setSelected(4)}
+                    style={{ background: "transparent" }}
+                    disableRipple
+                  >
+                    <Grid
+                      container
+                      className={selected === 4 ? "selected" : ""}
+                    >
+                      <List>V</List>
+                    </Grid>
+                  </Button>
+                </Grid>
+              </Grid>
+            </Grid>
+
+            <Heading>{CONTENT[selected].heading}</Heading>
+            <PortfolioItem>
+              <BannerLeft>
+                <IMG src={CONTENT[selected].image} alt="One" />
+              </BannerLeft>
+              <BannerRight>
+                <Button
+                  variant="outlined"
+                  disableRipple
+                  style={{
+                    borderRadius: "15px",
+                    border: "1px solid #222",
+                    height: 60,
+                    width: 225,
+                    justifyContent: "left",
+                  }}
+                  onClick={() => openInNewTab(CONTENT[selected].link)}
+                >
+                  <RemoveRedEye fontSize="medium" style={{ color: "#222" }} />
+                  <Typography
+                    style={{
+                      textAlign: "justify",
+                      color: "#222",
+                      fontFamily: "Roboto",
+                      textTransform: "capitalize",
+                      fontWeight: 300,
+                      letterSpacing: 1,
+                      lineHeight: 1.5,
+                      fontSize: 18,
+                      marginLeft: 20,
+                    }}
+                  >
+                    View Project
+                  </Typography>
+                </Button>
+              </BannerRight>
+            </PortfolioItem>
+          </Grid>
         </Grid>
-      </Grid>
-    </Grid>
+      </Wrap>
+    </div>
   );
 }
