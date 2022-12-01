@@ -136,31 +136,31 @@ const IMG = styled("img")(({ theme }) => ({
 const CONTENT = [
   {
     heading: "Frontend",
-    image: "/assets/front.png",
+    image: "/assets/1.png",
     link: "https://www.linkedin.com/in/j2daniels/",
     options: ["React", "Flutter", "JS : TS", "Dart", "React Native"],
   },
   {
     heading: "Backend",
-    image: "/assets/back.png",
+    image: "/assets/2.png",
     link: "https://www.linkedin.com/in/j2daniels/",
     options: ["Node.js", "Python", "DBs", "GraphQL", "Containers"],
   },
   {
     heading: "Platform",
-    image: "/assets/cloud.png",
+    image: "/assets/3.png",
     link: "https://www.linkedin.com/in/j2daniels/",
     options: ["AWS", "GCP", "Azure", "Firebase", "Amplify"],
   },
   {
     heading: "Data Analytics",
-    image: "/assets/data.png",
+    image: "/assets/4.png",
     link: "https://www.linkedin.com/in/j2daniels/",
     options: ["SQL", "Pandas", "Tableau", "Spark", "Databricks"],
   },
   {
     heading: "Machine Learning",
-    image: "/assets/intell.png",
+    image: "/assets/5.png",
     link: "https://www.linkedin.com/in/j2daniels/",
     options: ["Scikit", "Keras", "TenserFlow", "PyTorch", "Sagemaker"],
   },
