@@ -1,10 +1,8 @@
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import LeftTitleBar from "../../components/leftbar";
-import { RemoveRedEye } from "@mui/icons-material";
 import { useState } from "react";
 import { styled } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
 
 const List = styled("div")(({ theme }) => ({
   border: "1px solid #222",
@@ -25,9 +23,9 @@ const List = styled("div")(({ theme }) => ({
     padding: "10px",
   },
   [theme.breakpoints.down("sm")]: {
-    height: "50px",
+    height: "60px",
     width: "200px",
-    padding: "10px",
+    padding: "0px",
   },
 }));
 
@@ -66,7 +64,7 @@ const Wrap = styled("div")(({ theme }) => ({
 }));
 
 const PortfolioItem = styled("div")(({ theme }) => ({
-  height: 500,
+  height: 150,
   width: "65%",
   display: "flex",
   alignItems: "center",
@@ -76,48 +74,42 @@ const PortfolioItem = styled("div")(({ theme }) => ({
   marginTop: "20px",
   boxShadow: "0px 10px 15px 3px rgba(0,0,0,0.1)",
   [theme.breakpoints.down("lg")]: {
-    flexDirection: "column",
-    width: "500px",
+    height: "100%",
+    width: "75%",
   },
   [theme.breakpoints.down("sm")]: {
-    flexDirection: "column",
+    height: "100%",
     width: "100%",
   },
 }));
 
 const BannerLeft = styled("div")(({ theme }) => ({
-  height: 500,
+  height: 150,
   width: "50%",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   borderRight: "1px solid #222",
   [theme.breakpoints.down("lg")]: {
-    borderRight: "none",
-    borderBottom: "1px solid #222",
-    height: "50%",
-    width: "100%",
+    height: 150,
+    width: "50%",
   },
   [theme.breakpoints.down("sm")]: {
-    borderRight: "none",
-    borderBottom: "1px solid #222",
-    height: 300,
-    width: "100%",
+    height: 150,
+    width: "50%",
   },
 }));
 
 const BannerRight = styled("div")(({ theme }) => ({
-  height: 500,
+  height: 150,
   width: "50%",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  [theme.breakpoints.up("md")]: {
-    width: "50%",
-  },
-  [theme.breakpoints.down("md")]: {
-    width: "75%",
-  },
+  fontSize: 22,
+  fontWeight: 700,
+  [theme.breakpoints.up("md")]: {},
+  [theme.breakpoints.down("md")]: {},
 }));
 
 const IMG = styled("img")(({ theme }) => ({
@@ -128,52 +120,51 @@ const IMG = styled("img")(({ theme }) => ({
   objectFit: "cover",
   [theme.breakpoints.down("lg")]: {
     borderTopLeftRadius: 15,
-    borderBottomLeftRadius: 0,
-    borderTopRightRadius: 15,
+    borderBottomLeftRadius: 15,
+    borderTopRightRadius: 0,
     objectFit: "cover",
     width: "100%",
   },
   [theme.breakpoints.down("sm")]: {
     borderTopLeftRadius: 15,
-    borderBottomLeftRadius: 0,
-    borderTopRightRadius: 15,
+    borderBottomLeftRadius: 15,
+    borderTopRightRadius: 0,
     width: "100%",
   },
 }));
-
 
 const CONTENT = [
   {
     heading: "Frontend",
     image: "/assets/front.png",
     link: "https://www.linkedin.com/in/j2daniels/",
+    options: ["React", "Flutter", "JS : TS", "Dart", "React Native"],
   },
   {
     heading: "Backend",
     image: "/assets/back.png",
     link: "https://www.linkedin.com/in/j2daniels/",
+    options: ["Node.js", "Python", "DBs", "GraphQL", "Containers"],
   },
   {
     heading: "Platform",
     image: "/assets/cloud.png",
     link: "https://www.linkedin.com/in/j2daniels/",
+    options: ["AWS", "GCP", "Azure", "Firebase", "Amplify"],
   },
   {
-    heading: "Data Science",
+    heading: "Data Analytics",
     image: "/assets/data.png",
     link: "https://www.linkedin.com/in/j2daniels/",
+    options: ["SQL", "Pandas", "Tableau", "Spark", "Databricks"],
   },
   {
     heading: "Machine Learning",
     image: "/assets/intell.png",
     link: "https://www.linkedin.com/in/j2daniels/",
+    options: ["Scikit", "Keras", "TenserFlow", "PyTorch", "Sagemaker"],
   },
 ];
-
-const openInNewTab = (url) => {
-  const newWindow = window.open(url, "_blank");
-  if (newWindow) newWindow.opener = null;
-};
 
 export default function Creators() {
   const [selected, setSelected] = useState(0);
@@ -299,37 +290,31 @@ export default function Creators() {
               <BannerLeft>
                 <IMG src={CONTENT[selected].image} alt="One" />
               </BannerLeft>
-              <BannerRight>
-                <Button
-                  variant="outlined"
-                  disableRipple
-                  style={{
-                    borderRadius: "15px",
-                    border: "1px solid #222",
-                    height: 60,
-                    width: 225,
-                    justifyContent: "left",
-                  }}
-                  onClick={() => openInNewTab(CONTENT[selected].link)}
-                >
-                  <RemoveRedEye fontSize="medium" style={{ color: "#222" }} />
-                  <Typography
-                    style={{
-                      textAlign: "justify",
-                      color: "#222",
-                      fontFamily: "Roboto",
-                      textTransform: "capitalize",
-                      fontWeight: 300,
-                      letterSpacing: 1,
-                      lineHeight: 1.5,
-                      fontSize: 18,
-                      marginLeft: 20,
-                    }}
-                  >
-                    Learn more
-                  </Typography>
-                </Button>
-              </BannerRight>
+              <BannerRight>{CONTENT[selected].options[0]}</BannerRight>
+            </PortfolioItem>
+            <PortfolioItem>
+              <BannerLeft>
+                <IMG src={CONTENT[selected].image} alt="One" />
+              </BannerLeft>
+              <BannerRight>{CONTENT[selected].options[1]}</BannerRight>
+            </PortfolioItem>
+            <PortfolioItem>
+              <BannerLeft>
+                <IMG src={CONTENT[selected].image} alt="One" />
+              </BannerLeft>
+              <BannerRight>{CONTENT[selected].options[2]}</BannerRight>
+            </PortfolioItem>
+            <PortfolioItem>
+              <BannerLeft>
+                <IMG src={CONTENT[selected].image} alt="One" />
+              </BannerLeft>
+              <BannerRight>{CONTENT[selected].options[3]}</BannerRight>
+            </PortfolioItem>
+            <PortfolioItem>
+              <BannerLeft>
+                <IMG src={CONTENT[selected].image} alt="One" />
+              </BannerLeft>
+              <BannerRight>{CONTENT[selected].options[4]}</BannerRight>
             </PortfolioItem>
           </Grid>
         </Grid>

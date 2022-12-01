@@ -26,7 +26,7 @@ const List2 = styled("div")(({ theme }) => ({
   },
   [theme.breakpoints.down("sm")]: {
     height: "75px",
-    width: "175px",
+    width: "150px",
     padding: "10px",
   },
 }));
