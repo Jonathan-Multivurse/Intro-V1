@@ -162,7 +162,7 @@ const CONTENT = [
     heading: "Machine Learning",
     image: "/assets/5.png",
     link: "https://www.linkedin.com/in/j2daniels/",
-    options: ["Scikit", "Keras", "TenserFlow", "PyTorch", "Sagemaker"],
+    options: ["Scikit", "Keras", "PyTorch", "TenserFlow", "Sagemaker"],
   },
 ];
 

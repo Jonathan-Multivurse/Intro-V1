@@ -262,7 +262,7 @@ function Hero() {
         <Description>
           <Grid>
             <MainHeading>Senior Full Stack Engineer</MainHeading>
-            <SubHeading>Frontend : Backend : Platform</SubHeading>
+            <SubHeading>Frontend : Backend : Platform : ML</SubHeading>
             <Paragraph>
               Check out my latest project and resume below
               <br />
@@ -274,7 +274,7 @@ function Hero() {
               variant="outlined"
               onClick={() =>
                 openInNewTab(
-                  "https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume.pdf?alt=media&token=b6ba2bea-f789-48b6-9d2a-d971608cd4a8"
+                  "https://firebasestorage.googleapis.com/v0/b/site-360ad.appspot.com/o/Resume.pdf?alt=media&token=71a8dda6-21cc-4c68-a4e0-fa5cbd27b8d6"
                 )
               }
             >
