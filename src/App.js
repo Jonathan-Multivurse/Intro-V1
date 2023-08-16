@@ -42,7 +42,7 @@ function App() {
           <div
             className="App"
             style={{
-              background: "linear-gradient(to bottom, #fff, #fff, #fff)",
+              background: "linear-gradient(to bottom, #222, #111, #222)",
             }}
           >
             <Header />

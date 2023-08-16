@@ -23,7 +23,7 @@ const navLinkStyles = {
   color: "#222",
 };
 const NavTitle = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -41,8 +41,8 @@ const namecontainer = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  background: "linear-gradient(to right, #222, #222)",
-  color: "#fff",
+  background: "linear-gradient(to right, #fff, #fff)",
+  color: "#222",
   fontFamily: "helvetica",
   boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
   fontSize: 18,
@@ -70,7 +70,7 @@ function Header() {
           }}
           aria-controls="basic-navbar-nav"
         >
-          <Menu style={{ fontSize: "32px", color: "#222" }} />
+          <Menu style={{ fontSize: "32px", color: "#fff" }} />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Grid container style={{ marginTop: 25 }} />

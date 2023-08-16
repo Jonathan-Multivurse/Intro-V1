@@ -7,7 +7,7 @@ import { RemoveRedEye } from "@mui/icons-material";
 import Typography from "@mui/material/Typography";
 
 const List = styled("div")(({ theme }) => ({
-  border: "1px solid #222",
+  border: "1px solid #fff",
   borderRadius: 18,
   padding: "15px",
   fontSize: 25,
@@ -17,8 +17,9 @@ const List = styled("div")(({ theme }) => ({
   alignItems: "center",
   height: "75px",
   width: "200px",
+  color: "#fff",
   boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-  background: "linear-gradient(to top, #fff, #fff)",
+  background: "linear-gradient(to top, #222, #222)",
   [theme.breakpoints.down("md")]: {
     height: "60px",
     width: "200px",
@@ -40,7 +41,7 @@ const Heading = styled("div")(({ theme }) => ({
   textTransform: "capitalize",
   fontSize: 28,
   marginBottom: "15px",
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -74,7 +75,7 @@ const PortfolioItem = styled("div")(({ theme }) => ({
   flexDirection: "row",
   borderRadius: "15px",
   marginTop: "20px",
-  boxShadow: "0px 10px 15px 3px rgba(0,0,0,0.1)",
+  border: "1px solid #fff",
   [theme.breakpoints.down("lg")]: {
     flexDirection: "column",
     width: "500px",
@@ -91,16 +92,16 @@ const BannerLeft = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  borderRight: "1px solid #222",
+  borderRight: "1px solid #fff",
   [theme.breakpoints.down("lg")]: {
     borderRight: "none",
-    borderBottom: "1px solid #222",
+    borderBottom: "1px solid #fff",
     height: "50%",
     width: "100%",
   },
   [theme.breakpoints.down("sm")]: {
     borderRight: "none",
-    borderBottom: "1px solid #222",
+    borderBottom: "1px solid #fff",
     height: 300,
     width: "100%",
   },
@@ -112,6 +113,7 @@ const BannerRight = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  background: "transparent",
   [theme.breakpoints.up("md")]: {
     width: "50%",
   },
@@ -285,6 +287,21 @@ export default function Features() {
                     </Grid>
                   </Button>
                 </Grid>
+
+                <Grid container xs={2}>
+                  <Button
+                    onClick={() => setSelected(4)}
+                    style={{ background: "transparent" }}
+                    disableRipple
+                  >
+                    <Grid
+                      container
+                      className={selected === 4 ? "selected" : ""}
+                    >
+                      <List>6</List>
+                    </Grid>
+                  </Button>
+                </Grid>
               </Grid>
             </Grid>
 
@@ -299,18 +316,18 @@ export default function Features() {
                   disableRipple
                   style={{
                     borderRadius: "15px",
-                    border: "1px solid #222",
+                    border: "1px solid #fff",
                     height: 60,
                     width: 225,
                     justifyContent: "left",
                   }}
                   onClick={() => openInNewTab(CONTENT[selected].link)}
                 >
-                  <RemoveRedEye fontSize="medium" style={{ color: "#222" }} />
+                  <RemoveRedEye fontSize="medium" style={{ color: "#fff" }} />
                   <Typography
                     style={{
                       textAlign: "justify",
-                      color: "#222",
+                      color: "#fff",
                       fontFamily: "Roboto",
                       textTransform: "capitalize",
                       fontWeight: 300,

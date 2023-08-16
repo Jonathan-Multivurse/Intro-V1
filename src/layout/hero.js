@@ -117,8 +117,8 @@ const MainButton = styled("button")(({ theme }) => ({
   textTransform: "capitalize",
   fontWeight: "normal",
   background: "transparent",
-  border: "1px solid #222",
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  border: "1px solid #fff",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -149,7 +149,7 @@ const MainButton = styled("button")(({ theme }) => ({
 
 const MainHeading = styled("div")(({ theme }) => ({
   fontFamily: "Roboto",
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -182,7 +182,7 @@ const MainHeading = styled("div")(({ theme }) => ({
 const SubHeading = styled("div")(({ theme }) => ({
   fontFamily: "Roboto",
   backgroundColor: "transparent",
-  color: "#222",
+  color: "#fff",
   width: 450,
   textAlign: "center",
   display: "flex",
@@ -211,7 +211,7 @@ const SubHeading = styled("div")(({ theme }) => ({
 }));
 
 const Paragraph = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -299,6 +299,18 @@ function Hero() {
               }
             >
               Freelance work
+            </MainButton>
+
+            <MainButton
+              disableRipple
+              variant="outlined"
+              onClick={() =>
+                openInNewTab(
+                  "https://www.upwork.com/freelancers/~0144e39f7980edb847"
+                )
+              }
+            >
+              AI portfolio
             </MainButton>
           </Buttons>
         </Description>

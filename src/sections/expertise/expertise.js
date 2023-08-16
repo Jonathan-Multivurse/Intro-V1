@@ -7,18 +7,19 @@ import { RemoveRedEye } from "@mui/icons-material";
 import Typography from "@mui/material/Typography";
 
 const List2 = styled("div")(({ theme }) => ({
-  border: "1px solid #222",
+  border: "1px solid #fff",
   borderRadius: 18,
   padding: "15px",
-  fontSize: 25,
-  fontWeight: "bolder",
+  fontSize: 22,
+  fontWeight: "bold",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   height: "75px",
-  width: "250px",
+  width: "200px",
+  color: "#fff",
   boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-  background: "linear-gradient(to top, #fff, #fff)",
+  background: "linear-gradient(to top, #222, #222)",
   [theme.breakpoints.down("md")]: {
     height: "75px",
     width: "200px",
@@ -40,7 +41,7 @@ const Heading = styled("div")(({ theme }) => ({
   textTransform: "capitalize",
   fontSize: 28,
   marginBottom: "15px",
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -61,7 +62,7 @@ const Sub = styled("div")(({ theme }) => ({
   textTransform: "capitalize",
   fontSize: 20,
   marginBottom: "15px",
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -96,7 +97,6 @@ const PortfolioItem = styled("div")(({ theme }) => ({
   flexDirection: "row",
   borderRadius: "15px",
   marginTop: "20px",
-  boxShadow: "0px 10px 15px 3px rgba(0,0,0,0.1)",
   [theme.breakpoints.down("lg")]: {
     flexDirection: "column",
     width: "500px",
@@ -134,6 +134,8 @@ const BannerRight = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  background: "transparent",
+  border: "1px solid #fff",
   [theme.breakpoints.up("md")]: {
     width: "50%",
   },
@@ -210,10 +212,10 @@ export default function Community() {
                 md={12}
                 sm={9}
                 style={{
-                  width: "800px",
+                  width: "1200px",
                   marginBottom: 30,
                   display: "flex",
-                  justifyContent: "space-around",
+                  justifyContent: "space-between",
                   alignItems: "center",
                 }}
               >
@@ -225,26 +227,38 @@ export default function Community() {
 
                                         }`}
                 </style>
-                <Grid xs={6}>
+                <Grid xs={4}>
                   <Button
                     onClick={() => setSelected(0)}
                     style={{ background: "transparent" }}
                     disableRipple
                   >
                     <Grid className={selected === 0 ? "selected" : ""}>
-                      <List2>A</List2>
+                      <List2>Web</List2>
                     </Grid>
                   </Button>
                 </Grid>
 
-                <Grid xs={6}>
+                <Grid xs={4}>
                   <Button
                     onClick={() => setSelected(1)}
                     style={{ background: "transparent" }}
                     disableRipple
                   >
                     <Grid className={selected === 1 ? "selected" : ""}>
-                      <List2>B</List2>
+                      <List2>Mobile</List2>
+                    </Grid>
+                  </Button>
+                </Grid>
+
+                <Grid xs={4}>
+                  <Button
+                    onClick={() => setSelected(1)}
+                    style={{ background: "transparent" }}
+                    disableRipple
+                  >
+                    <Grid className={selected === 1 ? "selected" : ""}>
+                      <List2>APIs</List2>
                     </Grid>
                   </Button>
                 </Grid>
@@ -263,7 +277,7 @@ export default function Community() {
                   disableRipple
                   style={{
                     borderRadius: "15px",
-                    border: "1px solid #222",
+                    border: "1px solid #fff",
                     height: 60,
                     width: 225,
                     justifyContent: "left",
@@ -274,7 +288,7 @@ export default function Community() {
                   <Typography
                     style={{
                       textAlign: "justify",
-                      color: "#222",
+                      color: "#fff",
                       fontFamily: "Roboto",
                       textTransform: "capitalize",
                       fontWeight: 300,

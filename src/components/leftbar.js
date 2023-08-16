@@ -17,7 +17,7 @@ const LEFT_TITLE_BAR = styled(Grid)(() => ({
 
 const Title = styled("div")(({ theme }) => ({
   textAlign: "left",
-  color: "#222",
+  color: "#fff",
   fontFamily: "Roboto",
   fontSize: 22,
   fontWeight: 600,
@@ -28,12 +28,12 @@ const Title = styled("div")(({ theme }) => ({
 }));
 
 const SubTitle = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
   textAlign: "left",
-  color: "#222",
+  color: "#fff",
   fontFamily: "helvetica",
   fontSize: 16,
   fontWeight: 400,
@@ -58,7 +58,7 @@ export default function LeftTitleBar({ title, content }) {
                 height: 1.5,
                 width: "70%",
                 border: "none",
-                background: "linear-gradient(90deg, #222 0%, #222 100%)",
+                background: "linear-gradient(90deg, #fff 0%, #fff 100%)",
                 opacity: 0.8,
               }}
             ></hr>
@@ -66,10 +66,10 @@ export default function LeftTitleBar({ title, content }) {
         </Grid>
         <hr
           style={{
-            height: 1.5,
+            height: 2.0,
             width: "85%",
             border: "none",
-            background: "linear-gradient(90deg, #222 0%, #222 100%)",
+            background: "linear-gradient(90deg, #222 0%, #fff 100%)",
             opacity: 0.8,
           }}
         ></hr>

@@ -56,7 +56,7 @@ export default function InvestorsCard({ cardContent, link }) {
           textAlign: "start",
           color: "#223366",
           boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-          background: "linear-gradient(to top, #fff, #fff)",
+          background: "#fff",
         }}
       >
         <CardContent style={{ width: "100%", paddingRight: 40 }}>
@@ -64,7 +64,7 @@ export default function InvestorsCard({ cardContent, link }) {
             style={{
               marginBottom: 15,
               textAlign: "left",
-              color: "#222",
+              color: "#fff",
               fontFamily: "Roboto",
               fontSize: 20,
               fontWeight: 400,
@@ -76,7 +76,7 @@ export default function InvestorsCard({ cardContent, link }) {
           <Typography
             style={{
               textAlign: "justify",
-              color: "#222",
+              color: "#fff",
               fontFamily: "Roboto",
               fontWeight: 300,
               letterSpacing: 1,
@@ -88,7 +88,7 @@ export default function InvestorsCard({ cardContent, link }) {
           <Typography
             style={{
               textAlign: "justify",
-              color: "#222",
+              color: "#fff",
               fontFamily: "Roboto",
               fontWeight: 300,
               marginTop: 50,
@@ -113,11 +113,11 @@ export default function InvestorsCard({ cardContent, link }) {
               }}
               onClick={() => openInNewTab("https://explorers.multivurse.com/")}
             >
-              <RemoveRedEye fontSize="medium" style={{ color: "#222" }} />
+              <RemoveRedEye fontSize="medium" style={{ color: "#fff" }} />
               <Typography
                 style={{
                   textAlign: "justify",
-                  color: "#222",
+                  color: "#fff",
                   fontFamily: "Roboto",
                   textTransform: "capitalize",
                   fontWeight: 300,

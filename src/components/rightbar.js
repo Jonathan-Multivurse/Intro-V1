@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 
 const RIGHT_TITLE_BAR = styled(Grid)(() => ({
-  background: "linear-gradient(to left, #fff, #fff)",
+  background: "transparent",
   // boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
   borderTopLeftRadius: "199px",
   marginTop: "100px",
@@ -17,7 +17,7 @@ const RIGHT_TITLE_BAR = styled(Grid)(() => ({
 
 const Title = styled("div")(({ theme }) => ({
   textAlign: "left",
-  color: "#222",
+  color: "#fff",
   fontFamily: "Roboto",
   fontSize: 22,
   fontWeight: 600,
@@ -28,12 +28,12 @@ const Title = styled("div")(({ theme }) => ({
 }));
 
 const SubTitle = styled("div")(({ theme }) => ({
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
   textAlign: "left",
-  color: "#222",
+  color: "#fff",
   fontFamily: "helvetica",
   fontSize: 16,
   fontWeight: 400,
@@ -58,7 +58,7 @@ export default function RightTitleBar({ title, content }) {
                 height: 1.5,
                 width: "70%",
                 border: "none",
-                background: "linear-gradient(90deg, #222 0%, #222 100%)",
+                background: "linear-gradient(90deg, #fff 0%, #fff 100%)",
                 opacity: 0.8,
               }}
             ></hr>
@@ -66,10 +66,10 @@ export default function RightTitleBar({ title, content }) {
         </Grid>
         <hr
           style={{
-            height: 1.5,
+            height: 2.0,
             width: "85%",
             border: "none",
-            background: "linear-gradient(90deg, #222 0%, #222 100%)",
+            background: "linear-gradient(90deg, #fff 0%, #222 100%)",
             opacity: 0.8,
           }}
         ></hr>

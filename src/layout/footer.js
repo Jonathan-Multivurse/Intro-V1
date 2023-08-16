@@ -5,7 +5,7 @@ import { LinkedIn, GitHub } from "@mui/icons-material";
 import Link from "@mui/material/Link";
 
 const FOOTER = styled(Grid)(() => ({
-  background: "#222",
+  background: "#111",
   opacity: 1,
   justifyContent: "center",
   marginTop: "100px",

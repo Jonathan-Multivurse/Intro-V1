@@ -5,7 +5,7 @@ import { useState } from "react";
 import { styled } from "@mui/material/styles";
 
 const List = styled("div")(({ theme }) => ({
-  border: "1px solid #222",
+  border: "1px solid #fff",
   borderRadius: 18,
   padding: "15px",
   fontSize: 25,
@@ -15,8 +15,9 @@ const List = styled("div")(({ theme }) => ({
   alignItems: "center",
   height: "75px",
   width: "200px",
+  color: "#fff",
   boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-  background: "linear-gradient(to top, #fff, #fff)",
+  background: "linear-gradient(to top, #222, #222)",
   [theme.breakpoints.down("md")]: {
     height: "60px",
     width: "200px",
@@ -38,7 +39,7 @@ const Heading = styled("div")(({ theme }) => ({
   textTransform: "capitalize",
   fontSize: 28,
   marginBottom: "15px",
-  backgroundImage: "linear-gradient(90deg, #222 0%, #222 100%)",
+  backgroundImage: "linear-gradient(90deg, #fff 0%, #fff 100%)",
   backgroundSize: "100%",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
@@ -72,7 +73,7 @@ const PortfolioItem = styled("div")(({ theme }) => ({
   flexDirection: "row",
   borderRadius: "15px",
   marginTop: "20px",
-  boxShadow: "0px 10px 15px 3px rgba(0,0,0,0.1)",
+  border: "1px solid #fff",
   [theme.breakpoints.down("lg")]: {
     height: "100%",
     width: "75%",
@@ -106,8 +107,10 @@ const BannerRight = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  background: "transparent",
   fontSize: 22,
   fontWeight: 700,
+  color: "#fff",
   [theme.breakpoints.up("md")]: {},
   [theme.breakpoints.down("md")]: {},
 }));
@@ -279,6 +282,21 @@ export default function Creators() {
                       className={selected === 4 ? "selected" : ""}
                     >
                       <List>V</List>
+                    </Grid>
+                  </Button>
+                </Grid>
+
+                <Grid container xs={2}>
+                  <Button
+                    onClick={() => setSelected(4)}
+                    style={{ background: "transparent" }}
+                    disableRipple
+                  >
+                    <Grid
+                      container
+                      className={selected === 4 ? "selected" : ""}
+                    >
+                      <List>VI</List>
                     </Grid>
                   </Button>
                 </Grid>
