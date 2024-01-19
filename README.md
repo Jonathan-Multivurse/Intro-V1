@@ -1,1 +1,1 @@
-# This is Jonathan's Intro-V1 Site!
+# Jonathan's Intro-V1 Site!
